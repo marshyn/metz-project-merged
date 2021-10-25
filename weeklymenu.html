@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<!-- template page: includes header navigation and footer navigation -->
+
+	<head>
+    	<title></title>
+    	<!-- import CSS -->
+    	<link rel="stylesheet" href="css/template_style.css"/>
+    	    <link rel="stylesheet" href="css/JadenCss.css" />
+	</head>
+
+
+
+  <nav>
+      <!-- NCF logo in the top left corner -->
+    <div id="mh-headerlogo">
+      <img width=175px alt="New College of Florida (NCF) logo." src="http://www.ncf.edu/wp-content/themes/newcollege2016/img/NCF-Blue196x58.png">
+    </div>
+
+
+  <!-- navigational header-->
+    <section id="mh-headerNav">
+      <div class="mh-headerNav">
+
+        <!-- Home button: brings you back to the index (home/front page) -->
+          <a href="index.html">Home</a>
+      <!-- Home button END -->
+
+
+      <!-- Food at NCF button: has clickable dropdown menu -->
+        <div class="mh-dropdown">
+            <button class="mh-dropbtn">Food at NCF</button> <!-- all "food locations" at NCF -->
+          <div class="mh-dropdown-content">
+            <a href="ham.html">Hamilton Center</a> <!-- "takeaway box" information will be under HAM page since it only pretains to HAM -->
+            <a href="boars.html">Boar's Head & Convenience Store</a>
+            <a href="foodpantry.html">Food Pantry</a>
+          </div>
+          </div> 
+      <!-- Food at NCF button END -->
+
+
+      <!-- Menu & Nutrition button: clickable dropdown menu-->
+        <div class="mh-dropdown">
+            <button class="mh-dropbtn">Menu & Nutrition</button>
+          <div class="mh-dropdown-content">
+            <a href="todaysmenu.html">Today's Menu</a>
+            <a href="weeklymenu.html">Weekly Menu</a>
+          </div>
+          </div> 
+      <!-- Menu & Nutrition button END -->
+
+
+      <!-- Plans & Pricing button -->
+        <a href="https://www.ncf.edu/campus-life/dining/">Plans & Pricing</a> <!-- just links to external NCF page -->
+      <!-- Plans & Pricing button END -->
+
+
+      <!-- News button: clickable dropdown menu-->
+        <div class="mh-dropdown">
+            <button class="mh-dropbtn">News</button>
+          <div class="mh-dropdown-content">
+            <a href="blog.html">Food Blog</a>
+            <a href="aboutMetz.html">Upcoming Events</a>
+            <a href="aboutMetz.html">Featured Dishes</a>
+          </div>
+        </div> 
+      <!-- News button END -->
+
+
+      <!-- About button: clickable dropdown menu -->
+        <div class="mh-dropdown">
+            <button class="mh-dropbtn">About</button>
+          <div class="mh-dropdown-content">
+            <a href="aboutMetz.html">Sustainability Goals</a>
+            <a href="feedback.html">Provide Feedback</a>
+          </div>
+          </div> 
+      <!-- About button END -->
+
+
+      <!-- COVID policies button -->
+        <a href="safety.html">COVID Policies</a> <!-- page regarding COVID dining policies -->
+      <!-- COVID policies button END -->
+
+      </div> <!-- div class navbar closing tag -->
+    </section>
+</nav>
+  <!-- navigational header END-->
+
+
+
+  <body>
+	<!-- where contents of the page go -->
+
+	    <div class='JadenMetzMenuPageBox'>
+
+        <!-- This hosts the bar where the Date, Food Profile, and The login Is -->
+        <div class='JadenDatePicker-Login-FoodProfile'> 
+                    
+                    <!-- This hosts the Date-->
+                    <div class='JadenDatePickerProfileBox'>
+                        
+                            <div class='JadenWordFitter3'>
+                                <p class='JadensGeneralText'>Look At Menu For:</p>
+                            </div>
+
+                            <div class='JadenWordFitter2'>
+                                  <select id='JadenDateSelecter' class='JadenDateOptions' value='0'>
+                                    <option id='JadenDate1' class='JadenDateOption' value="0">Today</option>
+                                    <option id='JadenDate2' class='JadenDateOption' value="1">Tommorow</option>
+                                    <option id='JadenDate3' class='JadenDateOption' value="2">Date</option>
+                                    <option id='JadenDate4' class='JadenDateOption' value="3">Date</option>
+                                    <option id='JadenDate5' class='JadenDateOption' value="4">Date</option>
+                                    <option id='JadenDate6' class='JadenDateOption' value="5">Date</option>
+                                    <option id='JadenDate7' class='JadenDateOption' value="6">Date</option>
+                                  </select>
+
+                        </div>
+                    
+                    </div> 
+
+                    <!-- This hosts the Food Profile-->
+                    <div class='JadenFoodProfileBox'>
+                        
+                        <!-- Rectangle Background Blue-->
+                        <div class='JadenBlueOvalBox1'>
+
+                            <!-- Had to put 'p' tag in these divs cause if I dont, sizing gets weird-->
+                            <div class='JadenWordFitter'>
+                                <p class='JadensGeneralText'>Dietary Restrictions</p>
+                            </div> 
+
+                            <!-- The choose button/orange ovular box-->
+                            <div id='JadenDisplayBox9' class='JadenOrangeOvalBox'>
+                                <p class='JadensGeneralText'>Choose▾</p>
+                            </div>                            
+
+                        </div>
+                    
+                    </div>
+
+                    <!-- This hosts the Login-->
+                    <div id='JadenLoginProfileBox' class='JadenLoginProfileBox'>
+
+                        <!-- Login Button-->
+                        <div id='JadenDisplayBox10' class='JadenBlueOvalBox2'>
+                            <p class='JadensLoginText'>Login</p>
+                        </div>
+
+                        <img id="JadenAccountPic" class='JadenAccountPic' src='https://lh3.googleusercontent.com/cnPAhiuM2HKomI7WHd7r1womWIm6TnqTFiGk5u1-shNAKlyFt9eRLJabe_XBgLe3KhuO6voUPNYqZFsfR6AlVJmdQKksebtj4Mh8hrHoiN29IkO1mDYG9yksEPDk84elDdpti5xBURR1AvZD1bwWWXpFMZuocCnc3udbj8QMYxKqlDhjzLXRm_fzKEC6OB6e6Wx1WZ0YGm7ST3CQFSLf1L1YHJXsXE6OlKkenf8ay9Ek-VNv6gI2QaTEVHN8lL96xGPpMHlKZHxbmUR7-R-IJu1Lgha9MNy5ca3qC_U5lYlG2PgXZnciqq5Bb9OP-Zbod-kxp9JnFEbCouJrkL_hKdlU8H47E66iqaMszP2Jdl_PV2-bUJiw-KNi79NiLs1eV0CpZV1E3JXAKjo9hAlFQAD-yjgIFT5o0t51lZ5Igvu-3TZSfWZ9IFKZORyvHdTku7iVUcMEy-AExb2jCH6IA_6mjWvWaAyNS6j8vws0bxm9YwcsfCPzUUXO6dCFLhwkttm4ud2MMpPvJIV56gfN781I8JXnReZJQcyrdAwju78lPNuQ8kPG1EU2R-k86g_8mBDmwna9ZTkr7utgsOPJuYFelCOOVgCikJHAdGzMcAQlGdpIFOc16KjcJ2eRTMmn1DfzvY13gqiY3zamNY0XZYjEcLk8qEiy9OZj4OxK-zwjOIGVK_NewZh_ufJTKeGdgWJnkFvya6BIq-TzS4gjADkx=s600-no?authuser=2'>
+                        
+                    </div>
+
+        </div>
+
+
+
+
+
+        <!-- This hosts the Pick Meal Time bar-->
+        <div class='JadenLunchDinnerBreakfastBar'>
+
+                    <!-- This hosts first 22.5% of the bar which hosts the Pick Meal Time Text:-->
+                    <div class='JadenLunchDinnerBreakfastBarFirstBox'>
+                        <p class='JadensGeneralText'>Pick Meal Time:</p>
+                    </div> 
+
+
+
+                    <!-- This hosts second 19.5% of the bar which hosts the All Button-->
+                    <div class='JadenLunchDinnerBreakfastBarOtherBox'>
+                        <button id='JadenAll' class="JadenButton">All</button>    
+                    </div> 
+
+
+
+                    <!-- This hosts third 19.5% of the bar which hosts the Breakfast Button-->
+                    <div class='JadenLunchDinnerBreakfastBarOtherBox'>
+                        <button id='JadenBreakfast' class="JadenButton">Breakfast</button>                       
+                    </div> 
+
+
+
+                    <!-- This hosts fourth 19.5% of the bar which hosts the Lunch Button-->
+                    <div class='JadenLunchDinnerBreakfastBarOtherBox'>
+                        <button id='JadenLunch' class="JadenButton">Lunch</button>                            
+                    </div> 
+
+                    <!-- This hosts last 19.5% of the bar which hosts the Dinner Button-->
+                    <div class='JadenLunchDinnerBreakfastBarLastBox'>
+                        <button id='JadenDinner' class="JadenButton">Dinner</button>                            
+                    </div> 
+
+        </div>
+
+
+
+
+        <!-- This hosts all the pictures of clickable food-->
+        <div class='JadenAllFoodDisplayedBox'>
+
+
+                    <!-- This hosts the first row of 4 pictures-->
+                    <div class='JadenFoodDisplayRow'>
+
+                        <!-- First food picture on row 1-->
+                        <div id='JadenDisplayBox1' class='JadenFoodDisplayBox1'>
+                            <p id='JadenFoodPictureName1' class='JadenFoodPictureName'>Waffle</p>
+                        </div>
+
+                        <!-- Second food picture on row 1-->
+                        <div id='JadenDisplayBox2' class='JadenFoodDisplayBox2'>
+                            <p id='JadenFoodPictureName2' class='JadenFoodPictureName'>Doughnut</p>
+                        </div>
+
+                        <!-- Third food picture on row 1-->
+                        <div id='JadenDisplayBox3' class='JadenFoodDisplayBox3'>
+                            <p id='JadenFoodPictureName3' class='JadenFoodPictureName'>Sausage & Gravy</p>
+                        </div>
+
+                        <!-- Fourth food picture on row 1-->
+                        <div id='JadenDisplayBox4' class='JadenFoodDisplayBox4'>
+                            <p id='JadenFoodPictureName4' class='JadenFoodPictureName'>Salad</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- This hosts the second row of 4 pictures-->
+                    <div class='JadenFoodDisplayRow'>
+
+                        <!-- First food picture on row 2-->
+                        <div id='JadenDisplayBox5' class='JadenFoodDisplayBox5'>
+                            <p id='JadenFoodPictureName5' class='JadenFoodPictureName'>Beef Stew</p>
+                        </div>
+
+
+                        <!-- Second food picture on row 2-->
+                        <div id='JadenDisplayBox6' class='JadenFoodDisplayBox6'>
+                            <p id='JadenFoodPictureName6' class='JadenFoodPictureName'>Burger</p>
+                        </div>
+
+
+                        <!-- Third food picture on row 2-->
+                        <div id='JadenDisplayBox7' class='JadenFoodDisplayBox7'>
+                            <p id='JadenFoodPictureName7' class='JadenFoodPictureName'>French Fries</p>
+                        </div>
+
+
+                        <!-- Fourth food picture on row 2-->
+                        <div id='JadenDisplayBox8' class='JadenFoodDisplayBox8'>
+                            <p id='JadenFoodPictureName8' class='JadenFoodPictureName'>Onion Rings</p>
+                        </div>
+
+                        
+                    </div>
+
+        </div>
+
+
+
+<!-- Waffle Info Popup-->
+<div id='JadenPopUp1' class='JadenPopUp1'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent1' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/_L4X1x5OormdiAertqoys-NQjb09CcLbS_h7FlAdbRdijiuGzb1c6eh9_OvORuSS7sne60Ok3FyA4Of2x9OhTN3ep6MCWVYNuaJ_By2lFHDDmK-WQgC4_XDFex84QfMWZMsBnUnOq6tLNDaMOczLhbrol4hQSvBt4nOz4_QyGDS1T_1kJUIwAj7IEvx4R9Ojrz2SM3thJKZZQcteUvcGYymcMCHk5Cq0o25YhaapbD_jSkvmUWBk375fSCa62QpQLoK6gYDU3UvDjDsQnkO3_BfL7n8NW0Fp27AaD1L4TMkLqb1NhGB79nUgn440lyM-hnjsvwFTPhR2zsjjvO1PEP5XzwBQaOaYdA6ouKfNoolWfJKvmhCeAXldOvCO9-IR4qGsCTp8VfXX1edkO5wSG6pewCJOLiPziBLmml3ems2USwdNzThyOgbHYkwOJaLgof7PX21Fl3qxa3P4UPTityKFgx2zgAh5Z0DoOWim253SFUI8-tYXRRIaNCntOk_TxTbIVGKCf2_DYquvuQ7Sy5UmNWFPWSAG87ijbj2R3oJGIv6pfVRfF-Z9CyHMKWSlrBXxIBjbZTdGCOcjzigUzWs7b92E4GKgPkADKn7GKYLuwrH64PzW3xczvxC9z9Pm-oT2JBNf39cQnvUBIj44Pjv86zoe9n_Ikf6EWUJf13GZMFDVo-AO2JJosp9N-6bandZI2EGd5lp6aICfV7Gpo9K0=w1317-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Waffle</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/ydP6yunOTH6zdFn8pwa07oIXu0KGcb2DSW8bLT5SlwUjdu00Au53kI333-1AQot1VlgJyRT0H_iynLjN--sI6kvj-T-KElpowDNSp6-I1uMF-bTKcqANPZkG4lYt8Cfb6990ecfyif4wvtjEnzWmp4e5VWUY5LTwP1rbVJnxIdWhhF2ByXrpIeBSQ4evLqF31zqtBqoZ_nl3DcTxxr_zV-9EwX7Tx34gZXAbosTOvfce7KpXWKBpSH77wAUI0-qjay0Y_uQCwye24fD_8i3Z90alHpR62dIm8A7OeQ-oeayjK-pqEm2tXJevDZgMY0j0Fi9bN_mZ36khAkojlffywfQaxlZpQAk2upqTkxUGmc5LjWWr1FmFON3ubJ5S0vhoMzmycrNiBg8J1I4ca-XHvYvNa9wQVSI3WzhRC0wNC0FSAoZBiWv-mfE1NkxNGtrq4Uh71Ql-bqMBjy73Z1UUnTln8aBDiwkLB4h4YpVTdSBqbAB6chXyi5jfJ-rWYW3aV42Ruh9C0qq1tmUJPc-bQRJC2IFZx-d_aI9yjvI2rf0kZzp0SqQiD4aNqC545wfyZOLeDjrATujpg_3C1im-6cUpLL8UARk4o3m0MKiACagKGzAlzcRBDbLNh8f8PSlg2EQNxvwgM8RiBE8Ad2DjLlf4qfkW7MGeTfUXu5bNUnmFq8_A1ZnfUizQCQgztvSDCyJE2MApxygee1mFSOPcyWwE=w291-h334-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton1' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+<!-- Tater Tot Info Popup-->
+<div id='JadenPopUp2' class='JadenPopUp2'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent2' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/iosthMsVIF52gwu2wamsTiLxGib7indePVngxrVml8UMWVfRHFS0epbbhbZ2H8gQ2dSU23DzzElC6iG4et4XSXouBXblso5qaMPzS8GAh7828PE6b2K2EIcLDnL_Xtk77KIaegOiFv-BkRf-x7VoyMRXw7io3ZsnGFdYSLYzooJEVQqS43tR-ITy6nxngzBp2BQmc_rVWAFXSy7dkoi9NBUuAB4-iTieOWkhCzkBl-Z53LKcrAjBTaN53NqctBbINXzXPoOBbBLjYbbPCksSEI2XX6pXKddqFHJPTo5bLd1akcJmprcRJOdLr9KyypAJ0mEme09AJxXZOAON74RBgwokIXX7Wtceq1jUxWoc9PYsMvMT_811DrjRYZK8T2EQcpGd_irTRNEPKAGCrB8w4Vng8O5Ukmrion5ZtBIkqYPKDOlLhZIa-u_zM06RbE3AmzoAIdmrsLGzeOzLK8dnkdG1C69k7BTA_IPgNjZ4kDgb847JT5E8g9-WQ5DPxTvZLB-pliXpwZ-oe7OauXiprbvK5bIBkdUOFKskGnmGA5w2hyC7T1VbwojpxNfTtZzfygkDPJsGDQIkJFFOCm8iif9QHgRaS3Wb4DKtkqy0IKlyGErBHnlLTD5JXVvEcSaLK9oKX7W0Ta7qWmRBny5rOt0xuULsLx7g2O7P66hVy-dV2rE8TbXV8Gklkt-e5gd04GWBm8xBDw9boyBQUnGC7iLj=w660-h584-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Tater Tots</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/Lxq9Hr8TUUtwNniT3fyZSwCrU-7S0Q6LebvGqP29B0_Hj-yh6lxNPiTMcL1N9D7TsXBqODoH7AG65wyuMbPYxZ5o4BqRLpvbSB74MJh-wkkl0TWlM4Xm1DKuURHjQ7t7myc5VFKInO_cpA0t40pEwGu3ca73lQ2iBPcUBIeG7zOrq8s-65gWNbme7CY1ebJaK2Teq-CehcvH5cZcAEjsNZi_MSl7yAX36qhEDDqfBvSOYWaVhOdVEmFIjz2JKzH07eUXcSzrJTsq7JhSE95QkqzApW87V7DJRyJOR_Dw4BLm2-wJN8nzN69Zdj3eF5be2j2icdhEwdR030NdAiaW9-aCu-Ld98tfwU9ZHcfwSRdJvfOXciyPOT9RgppdZ6b3PiJC1OYaLjutbFVGiI7mm4FAC2ZeJ5ALNRjaADw7t2mwPFN-fNecV3CKSWiilOjKNxQTuZNzcMhipAGVwbxlOg9j1DQysYhNYXccG_FY_Y97YB4z5GQR2nyUvKu1cH46aNprx2P9OOphaq1-YqWddUITXerQWG06VJxMjm8S6BKHDut1q_hc1hrlNkWfFgLwgwpmAcfltk7NCfNvzBCxjYucmgjgRuWI-7lzSsOHcpB7SwICUa2odcXyWWBd1FkM3AHBdaj6zXhgHjzPyFMcOknJ54wYBHXy9Tee5C2n-nPORA9oTdS8NHpeLbZWqSVRgCSejHpEcCJHLkwRaZKpTtqV=w255-h491-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton2' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+<!-- Doughnut Info Popup-->
+<div id='JadenPopUp3' class='JadenPopUp3'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent3' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/0ChLok8Zz9GIU_bXSHaR_-LAOGve1nprwFYQ7F0xjqOHXuZJOG1XlUqx4sZ_kwX4FnB6_ZAxdzclWdmmIG6JgQgGBase3SVS5c_-i1eNC0lNi_npc6yDYDsYFUGa3dxrlw1GLe2HMaDJWDZJBducgl4jkkIUhpC0Q8Sib-gEwFCv9dZE5UcK6r_ByoN61F-NkEYlUb5PPMQfzJpCeGbVh2dX_9rgU2kaX0oaUufxQF2PRkOhqDZQIlXHAd4n5HbS5gAzzEq13e_8atjS_xw5w5XsXQbvZInTO4yfmmxQZrXPzsRJq4VbhtnaqXCaG6N7v2lDWiNJJKCp14lKPtwk5282qJOAkSu0X25xw0HdHbz36sESDXWWGGE-yQW2L_EJXmrszF1jcK-RM1SlHNfHEdIxuraAY9_7hBcf0oyWU7m1zP66muNyYFhQ7Ss-qNeVFBj8iY_owU_n7BGIBfg0z20gYTj7TijQmdQZEpfKExm3Z8zx4TJMWJpGDNHlUeR2nDoywFdClj4BNQq4_B-G1Dw3EqPHcRJlbkAtOu_3vttjeGKIU4yxj2_nSl6z6LETrSaVbw9tOU5frzI5NGXAwfuoYk4a8J1aFbeiRzpEN8gp3rADmeXdCD__QZGNHc-pO3ILl7oOfxS6xCW1kAJ52fha76PIZcG9rLW9pnNDbjg08UHHeYGt-KmHijDqQ0Fk9ZEk2WhHDrnYcEPmDCOS2P5H=w1027-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Doughnut</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/vfGcwUaaBs9btm4RBn_ptaHgbIkKRa_HN52l6n4bq-iQfbYVmWBweFZqg9aOuXiD3VnGZZrlgf87miJGwfd2SU9El1QnxuowwvKiFs5aCR5u45NEhOCQlAECG75BjVEDcPnPSM8zgdt9rVf7mKWpUIOy6roI7rLVZx2lKYxww1S82GSInfxhDmdvfnEPUvxKpcUFemf3mQdm6siOsqFa53sN0gYtkhD3CwC9DvWFlTcVcSUG7nftyHzPyPQuJAaYPhs8pbH-cJAsRiS1Xub7I4auDfrtnSByRCXSa4N-GGEHFfgqd2SC7jLRugEHAtLytqTUWw8zxJ5ovYMhvUl041qlihnQTo7n0r3iJCEuGRpDwnVU85R66UEj-GEDEp6g4vJIDpFNQIqxXrmY56kVBkHIbA46bTyu5-ebV3qzblFcGipbag-IsZ7xCiH-XXBbrfGHBaTajGrv-_h0Jw3tjxU9826i-eG9I_WxDt1kN9Ful7xUANBDHDYpcqomsUph-ZOpuB9h4v07pU7xXtvbsyS9DGjeCxbXpULXS1PdHtZMglo6JTfWDlFB_xrVgzkP-21bsT_EdvX4B58kenmT0joHx5pThkR2xOQ9OUaAXIFdLhRa7Doq0rAECABWHeA_fvRvE7x31qGkKML_6eA9gZmZsZH397Xr21EdXC_AD88zvT0_mDfQbnJ3wPR91q2NXKqEPxbQHR5a4IaY3xwb6O3x=w146-h344-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton3' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- Sausage & Gravy Info Popup-->
+<div id='JadenPopUp4' class='JadenPopUp4'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent4' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/wWaaZuYqgNIe2sZWXIE1ls_LMIoc3Dm1k_H2JZ9ihWIIAemftHH4r3je33DXka_AbrhXrxr7FCB7SWTsG43140MnvLbmN3Tm0Q6kknuUFiDuhsoWzFyxJonQx3suoyvnGZ-ECkOhjT5kBjFiaZPm_S31ZyVRYt3yaKb20IrWRIkIcnU3JcqxNbF0vJ8_VsBJ7h33k7DOOAi4g-TJlcG9y9lH3KquihyhNJKqjhUqwXJhBSI_-xGT57XVb1kjmBZH_1EjqkN52vor7vdyYzIe9cmQTJiZ2Lg1mPp8PsHNxraTX4oCfMWOYdwl98PbOql0WMR1IPO-udL4l7FS6Cbqww8Xe7KkYIa5BpUA9hbD2RAGl6REc1M_hXPLPW6HnxHfyvY_it0cNEEmWDrVCmx4HI8n6LLGecTZCKsy7uBH1zqAxlB40wAIfIWKlavodiGMfUYiXjZztZ9Cja4NnhDjWggj7eHgsMiYw0DkSuk71ogU5a6dtIYp8HyXlteFHM7cpWtZjzRV92qFCEXTGQ37AUJzY2OtYgRPWwAiTzmG5e8adVcVXHRoPE77Mg4PRvrGgKayhO-RLRpmJr55ktqidpvWsC5iPFz1wW9NX0gVB-FPfdyUV5NN1pQdNkKik0bkTEumhHW8yioSzARlq-7CLQBv217H8f8HYKMauYzJFnAixW9CIvs66j76gyccdRzQic3YTOh13-MUd4MAZgXA7Hw0=w834-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Sausage & Gravy</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/Ugihh9pEIOyBtU7-NT1PJ3WRxIQZiNn3mpHYXJSp5QCPNEiLgx51XLp1SohMuRn9K6yLxxJFF6oTg0ntsoj2DQYUPVmjB-tEf4bRvbX_u5eRJmJD1Z2aIdzK08pyXLh_Vi5lkaIOFMydLGbrIesPnEcpRNUPJyS8de0zQDRwvWP_fOw2VBuiQfD3SJcIbds5cuYhkPa0nEgRQQ_qWPRO52lfHsJuUoSrq_LHdOUOl2GmxfUBxeyO4N2w6Dnjn5YuWMxu0BdCEqR57djwq7ssnOvXgOX__wU7p6w43nZVI0wERKFCxek7JGFY4jyCJz9FYFGm6MQDj4dJGHXFg9u2R8U-EV-jsn5vwOsZoSQV1zgg3jYa3IxniE9s5by-YmiLjv15f00rloXMIJSmnXG3AyEdxrtNjmQfO1_ecg2Tffm5XoUIWwGDPBA_eAsaCMSP_Bw8D66TlpIWOc-lEbJ0zamk1uTowEGgD0yQPDq3R1oKxiyCt0HVNF24ncy0rR7G9NserdEOcwmJqEALoOqNAjg7bR5zD9NIS_lXaRXoslycMJo0C6f08m0AumA_QKOc-B-5ISleLu1tymDeCt_yHro0SaNZdeXgJEhPiktG7UZCTT_VG-dgwJ8BXs5e8QdlMm6LNIDtMhVLVmqC3TzbXbpfrRPPNuNfsk5ZRkrJjE10WuicsBYstnAizJiVwzLLeYzYPyBpYublYPaBrdzhLlGT=w206-h392-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton4' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- Eggs Info Popup-->
+<div id='JadenPopUp5' class='JadenPopUp5'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent5' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/xtbL1lhRX-z-NRlKtaf9abFfwYOx3XbEA5lWs81PdPTM2WKfJw6w26ZE6sE5bEIZj2xAf6u7yBl2zS7Y9_Ye4uMuLiQi2ruEXHarJXZe7hcHR7gg4m6_fIsgaORvsCFL_li5v42Y1-4GKc_q7Fdo_z-Uu5MiicEuudCjlOMjHzQ_vL9Ee84xt5R0xigC3uLznkQO0bZiqLD8X7ShE-XTPJS0-uuDfUFHsq8jWZ1CpJOTtHPJiQiPsG-3L8KjhZ9NoR3VjdT6-bCR-RUYz4Eqjb3IbRNwUSeIruABdWBgKYwps7Cy8owi1ru1QT1CgWgeMvQPUUTHozE8jKn0aDuHcFipGRjmSJkRa8VllZq7SttJALuVRyVDFBfTv5Opl-A5h_nAOJxOfAIgEsgi5YKTnm4hl0fIfVOSSilH6JUKWzEepD2cCFUSimiLSSGr-yNUkaLx_rpQm7BokOxnCfBCwoR4HH2TUa01oJoitQfdhPIwT8H2i6LKagtLB7rY2dDN3j_S--V78360rhcul9LgCDrxRTkWlC4dyl2bSkETPAZaBPU3FWg4LxsrjPjvVHY4BOimMAoB47xf3SAaSJvZgJU5rzZyeQF89xkvU4BHzc4JHru16plS4lUSn0KarQPMEMGEyXESpQT4lhcV4P0yAbdsCtHyMq41d-9-HGxgk3lPeZSKvoaxf9Yw-5GfBF1KgF2obx5KMveDk0lRyEEM6Q0Z=w616-h576-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Eggs</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/FOuabBCox8dbyfLJ1SvKQbFlWKiqY7Xbg25_qXHQJMg5dOxDUOB4u6A8CgPYMU-FpGG6Q5roSJkGhScYKVSwKyMdX9V2yNeE2iabNWJRrU13W74dkXH-pKb00JQVZ0Fd6BlO9HDYnoTYE36U6JKDPJxDdMFevHOYWjfWYzcIxyzwOj9kISTBZkEfotYwlH87EDDJCfRHa2tSdB7Lv78REnSXR_ieh7ErF-c3AudGBTFzO8mJBNBJS2Kltd3fmBJul8xR_ZKFYXdLHPkg5WW9XL5noytouEGmBQhKl0YHTrI1KfF9AJtLwFqIklis-wy-X_XmAL3vOMM8rkNApJnOTdd01lr9z7G2bhM50VrFBvodiXQTHfrrvUU9x-grlfgtUcBxVUhMAqZ1SRke7kUrJdAoni61QZlXf_wRnLu7YkUTDpOrWUjxx_eNPqvhUoeurhTFo9ZpfXJNmnnle98wfl88BeoU2ldtyUVIZsitSgAtFzHqlvl-QBjnETQhfSXXMwgc0nL1WdV-sEgz7IWJlksUsNTug2Q4Ic0u8wML0uitHAUOQ-kwCstx7ztVLopNcT04IsdsXC8lFptcPAk_hRpFc8QTIlCn_4I9F1F9uuJamjvxtfoTIeepvsC_81H72LKzYMOhcjJHMUQby-UkknjsQRX3ow-3UEMKOMTZ6nS9JBfGSHmfP3bov8IXQb6QeROVcsPdUrsfDZ-VXXKB1BLc=w200-h424-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton5' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- Salad Info Popup-->
+<div id='JadenPopUp6' class='JadenPopUp6'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent6' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/Dwk1JrgWdQ209yKkZzrAADa3g---riqn-rl4WccA2gVUoeBfTFtqPXLIn5dk2wAkwc7oIqLZKMNZp1Lin8e821dRnq2_EV9aiE0TIXEkeMv4fZ6eGfpzVW-qHHQa1fh9RvJ2QblnhywzX_tm4o63NBVQM5Hue-tprN3AMzFAqVhAPSyOnvBEWOVL7GdRhIv45uJXW92ULwzAOznM5I_JiORtaAao5cXqde0pMWAcv7pfcBGXGbqCPgAR9Z0EMlO5u_64TJ83GsTFrjxPJfx9LVUT_W-uqdWHtHtvnQngG1UJUE7aGDuzrxt6khu1VV9zXE4zlV4M-2DWYyPFG9mjyoUFmEPEpexYMWwtJVVdt7ac0BV_fyTFflEubEZsLeA4Uc6NJ82pQy5Hz57bgaEgFenVLQm1QSzikpvpUgmBsHv5Jhvck_NlbEcwEDkz75-kJEEp7VgtFDGnTXq6kbZsux0cHegBlLn2lazZt1OnNcjceys9Y_v0Ka6la_mT9kyizE4ucq4X0ZwK_WhySUWDjXz-zzC8VtfI8r2CRVUZbI-oHFSaw6KX12ktqU1F-MUTCXM1pAXVzzr123cHfybyV8DYOGTNXUhsAh-RpkrYviXYsOAtW8pVLQtaMZeUD9TmFXCq1j5CvyWZnWAn6EzeghFaK2qOmKIDBdbDXWYAzn4JgQ3-yWdGPOjqNKk_LCYMie0R2-8FzzbWhalBIFJoAvbX=w1160-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Salad</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/XTNV7KvXgdhi5CE9LI2h0F7QOHBnLQ3r4rpkPpVTuOhS7gj3M22_dCVb4zUh07NPLLdNFSfhrmaByyL8spO7gvBIjb7EsJpr4kUmyzz8G04AJ_XkVO3EWliptvJNLcFWD3f0XoMZOptEezMRMY5yHoQi2ZU14kRxvumD0BxOUAn73MEZTycf9wjIHnnExbxRYe0rQGtjJlGedZ_Bf4OBXvjZr9R6ndRBOIPgiWYglgg6DUx6_1K91aoFbHdRLqto6WJqf8xMCwKLKwl4AxONja367TynawbRzqiFW7dyyKiukvnXB2RM3n7PlTyUJE2a0gHskQp19cuc36nTUe0s9lvrwsminiVQJwHGI9uoF-xDZDR2hEBxkDj8EXqASoWqXgGSV9UhwowyrdTqiLp2fIVCEqWB_yurUePMnRwQ5ZHgBoEEKWdtsSlj1tanaD3w7AY2gF-P7oRvXtnWCu2sSjDgAd_D_d_mRc71b8WOL9Bza4MPpG9SaoZDIKzzYfCt5_gSAmeA4u_6S_Tpzgtr7J6e51WqlvOB4bBuHl1XbGOxtGJ7CKqF3zP8xva97ZJLZm2FzLCygtpnh9XGUyS5oC0Vg577GhXLmdl3r-uTKACBfzuWlw_8w-FdUFkiXDldoJRw4p7oTNDpyaAPbFDq1D69PAT0SW0sMiQPCO_MRx3mzksnPbL0yNCQq6LA0eMZCtPQgqEHRgpc-sYbipsmSMRl=w306-h600-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton6' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- French Fries Info Popup-->
+<div id='JadenPopUp7' class='JadenPopUp7'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent7' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/hD4W4jUSScuzZziOAMT26euVk72CpeUGO6dt6OE8FriHKSGmOr8C17KyCouE_6wRtqU4rfO5baC-XlEMdtkNbNZwkK6lMMN6ztk_j7x5WVPTM2YQMaDPjAV4w9_ny2wHnPWBn7bwjb4UnmgA5jztRZfhxI16YNF8znm91ifOwbiA6QmjLn_LvvmmaawTOrvdiUtGmKwj1kZzdBLr7qWSYaaGDSY9kjetQBqN-JDwl8olpotfq-FB1RasDqv-WlFhq1PMfKGz3otxcfLez_v8W1gqxOnayLWajBrKvUb6hYXAmv6rWQijh4fGuirBbrGaPCFEy-Reh-mBPJ2ENcbdLTKansi16p9hvDIfeC6XDWxqKtZuYazv86k8CTaFOjTDFFYdl5_SepTuSwxKmEFvYrhFHovVfwPw0e-Pq74lxlGEAwAPKE5Z0kxGGk4atCzvYH-W_pfgNLwI7yWqz-rnTDfyJJG98B-qjzjhm-HmTqZ2jw2Q4RNMMIFIIErWDuEoP7Hj8YRvUcdDDqswouQZs2nZnGt0s1QzhhUwxCHiv-FsPvFsyUQ84h8vIhNZ_zLEzFCs717rcT5sMTLDGb0CF8HKnLDMN3QjS0Kmv-vWqgGPSQp2Hg6BdsRAO-NqePTm_rmq6AOc4W6LnMtaBN_G1wpm9F9re-T_JxJ7v6PwH4AQ2ehJ5mnq4-JHR1naQ87e-E4Frffz1Qy4khctvIGPPpun=w1094-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>French Fries</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/Lxq9Hr8TUUtwNniT3fyZSwCrU-7S0Q6LebvGqP29B0_Hj-yh6lxNPiTMcL1N9D7TsXBqODoH7AG65wyuMbPYxZ5o4BqRLpvbSB74MJh-wkkl0TWlM4Xm1DKuURHjQ7t7myc5VFKInO_cpA0t40pEwGu3ca73lQ2iBPcUBIeG7zOrq8s-65gWNbme7CY1ebJaK2Teq-CehcvH5cZcAEjsNZi_MSl7yAX36qhEDDqfBvSOYWaVhOdVEmFIjz2JKzH07eUXcSzrJTsq7JhSE95QkqzApW87V7DJRyJOR_Dw4BLm2-wJN8nzN69Zdj3eF5be2j2icdhEwdR030NdAiaW9-aCu-Ld98tfwU9ZHcfwSRdJvfOXciyPOT9RgppdZ6b3PiJC1OYaLjutbFVGiI7mm4FAC2ZeJ5ALNRjaADw7t2mwPFN-fNecV3CKSWiilOjKNxQTuZNzcMhipAGVwbxlOg9j1DQysYhNYXccG_FY_Y97YB4z5GQR2nyUvKu1cH46aNprx2P9OOphaq1-YqWddUITXerQWG06VJxMjm8S6BKHDut1q_hc1hrlNkWfFgLwgwpmAcfltk7NCfNvzBCxjYucmgjgRuWI-7lzSsOHcpB7SwICUa2odcXyWWBd1FkM3AHBdaj6zXhgHjzPyFMcOknJ54wYBHXy9Tee5C2n-nPORA9oTdS8NHpeLbZWqSVRgCSejHpEcCJHLkwRaZKpTtqV=w255-h491-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton7' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+
+<!-- Onion Ring Info Popup-->
+<div id='JadenPopUp8' class='JadenPopUp8'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent8' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/CSR_T5QdSuNHo7-CaogPyHZZINOpzzpW2XUUJpmDtqwZu-iPZxJzZbEXJcAu_AXxDV-nSobCDMcp_MbFUjJ94ojgbPGJ203BdC3FoFuTDqW_ey8F_j_Wg-njqbdpauwMT3Z3SekfU9jBOQh1TlsoVLwdrK5kU0M-2DE0n8y4t-Y7jQ2Efm5tpN8UFMZda66WcuHZqHcPElAEy4lHyocJd_H2pFyAeGjNtKkDKA1rQGVb-GkSgnLQQl5yn0RKEJ3hPigqnyNq6MzHi1Lj1doRY3MVO-9_yDdSvnov6i4noyAc9Y0B9q76sXhsqFuxfP2OM2IRHRA3Fa7nwt2EaYSO7LKK1R5gkquviqhLAbkrvzNYydE7KRm2lg26re7DleK_-QwBB_TTqnZ2lt2zoAt8Y6IPsp5TBrNVijoULpV8GklutncLO0_VU2484th6kfD2GIHTC6YGjl3mre53X1SzAFj7zTZcEb5giXiFLEfL9LkH9KPfU8ajYJggzjvwltaKBgbrpv2P1yGGNbo2dHttf1jhLe7aQ6R1wddaHnN7B8Ovda-RyHDwD4NwjReM4JhKzEzC6gXVg49fVdXtTgFE96ELfWF9z9IDDRQTN_Soe5c-Q7r_FswGKmPEq1sQRUNzUOdoiW063mEfeFjTlJCeM24ZKe4wceXnJz8pVtPCCr3kl6K63oJHbGWAjAMD_GheOp0qsCk44rE4ZHKFbt-RHEmq=w808-h604-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Onion Rings</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/JQGy6S16aVt2ns_3vetqwJ7AvvbK_ceWG_Gw8BvwJYRa3jLN4PuHQSbYUQ-8d0GtEjd_qRGh8Orcs3YOMWdecxYPPJWf6mIeSizl8SECY-5-q4MBxcnunup7QTnTJO_RlcXeioLr_0uLkWdqDj7lPS7cvzN7pWadUOHrWWuRLR4TFvoW3lCMqHtOiIZefsxAIFv_fPFK_NUvJt-CpEDDqnvneM64egrJjZQ3IfA-ICm4pVqO7Mp-ogZBhxj-YD8l6UbNFWl3nZJrBJTLUX3obT17CJ6HYQvauL0tsq7R3nt360apT2wOpuScgCKWFtSytz8vwhlRfQlrrx79dsZodZphosTFg_4Xn2Zux1aNjz3t2h8K5ld7JOLOc5LQZuu5Adx5brakW9nmzicDrtiTOn0Ptt4eBdA5g9rEmqgYFZRC_SkhmispA4T1XYlE2cK1rpcLcrqEStWUj0N76fytMA-ilxTgCiov5d2fNjD5i80Go2BMJ50ER2Ik8HfL48HOjmNkfKIXFkINnK9xZW9STaoj5VT314jtcAfAPHyq3yYlitKZmfZye-Gv3uRSxTzD7xuaG9dSSU0n273FA-Fa75pBcoi3iUxcXrUZ12eWitTz13M6Q_tnVmn0lXUEExoHJ9tYP5Arn_UiawphpDzKQJrAiZ8Sf6LJlVLMWGqlY1Jx8p7ums4Blqu_1NXPgVsJLo3GgMkXmupODk2RLOjPoHCO=w169-h298-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton8' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- Beef Stew Info Popup-->
+<div id='JadenPopUp9' class='JadenPopUp9'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent9' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/5jL3ZUzvf49OI1buZrIbre_FcDcgfcT288b-cCgmG2_MQVVPjGRF5AfdQEuvSWxFNlTUzefh-2lhyKTMbszxoh0MbziNL_iABbUMIRZdkQrrfhsjFW6swKk1lfYnwLgPWpfDmO2xCAMKE_zIWBKUbHMUEtuIaxogy6oKFA82egcxRXTiUrqJPQBWFaybYFTssoxx_t8i6I7fcYQeNwTdc6LxsWPoPxiYFGrSPpRYT908ZVzkBm-fMyGkry1Mc0hFPDx4USbxqfhgrjzWobckE1SB9w6E3KdJNyLqdViH2JKzaqM8eiNAamvFWmgq6TQjYrYoG4rnD-aZE1xiKp4HNFYS8YWV_HnS5XMwzhKsCg2MWLUETpcacS7JUQAQuhl7GKwS0fwVgVPyisNLadaoaZV0Taqg0_pNUlbnJ0PIML3D6_D0lX-UrR-NWDuOH1DsFoQY6PBwKA60oMCKpmqd5422nNYQHqTyP92NoH19oXtFGjFisdBQP96axiUspRvLuduEg6YjWd5xqjfY3BQU27t2zqr7CBFtEeip6RolR5AJuN5vk5tQD3YUWY13BGEYayVtcnvUiXrMw7rv_MIeq5rd0odQrJSR3oytSZzbb-FNC5PBB3c-OUpxY8TOAU2vmhDdD4_RaXmlTlW1xLchUKRgtQt5BsaAkoUqMUP6TAty77BKs-IuvyHYwQm89Nd3fx_XVAR83eICdiVPTL2Us8ba=w824-h660-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Beef Stew</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/G6d0BEWCnMM_4RGY8e9GZwLfn_D2Ab5CbkZRbTJ93-IK4n6HUHlPWso-jj_zNNNJlnry_Nqb7VVnyyXEMgTJ6cxcQQNdvye6otoVT09bDgewMDk_JF2LikxgFujUBbtgrLIXQVMRyTAlpLvFdRH7asreDEBAnfkNPVjBa3JrLzPZq1Ip6C-LblWmG0BaI1I7d-ZOR5NVEGZR_YNcBhzXOV5Ac4Elw4lt2GMi9XKjxCeVV05rFGlcnjpZvdFK3G1585iJUx-6cl0lCd6mg3W-BqqAaL7dp89tY0NKA23y5ZfcC2btpUewiy20GFs_kiB2vcAhmeVVKMQ0b-DqxLx33CdjKch3bkln06J-ihYc_-hGQtM5JtlMdD074BYwYmeKJFImGH8ASF9-kSuzvP_aEyWSFlurwIYLOqOCkZiVg1cz-7mqMx-2xx5l_JHLA96sFg0The1tEDgnMCSxE5B9nMHExnvARqAMZ0IHkVov0T2Asc5nH-05MG5T98gKw1eHmrK3stmZHlCuw3DxjgqSA76syP36XvrI3a0hBtzocLn5-cHq7YDF54vZMd-aCFDxp5iPDpoQL6LRi7alGrRSTo_d9MDj8YEa0sDg-N28V-BhOVRgSz6ivZRvlU3CbTvNeZdbFwS_10-GVKA7lFDu4tgDwcs5xpnKwSfCRoLfEHqfcU7KAkYzlaWbc0esH-m99g_TmfcYssUnnPva_vRQYfv1=w306-h600-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton9' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+
+<!-- Burger Info Popup-->
+<div id='JadenPopUp10' class='JadenPopUp10'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent10' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/qmCXetlRbBjHZ1RA6QDUX3xq7VzJ0eU4DuVcv-BeCoVTt3H6qs0CqAI4pA9xVzysMMAJT5F0XuwlD7LfBgr02-TMuKqUXKdplOsTH1RIuc8gNbcPmqG_M21KhMMW3TEzPdO2nzbfFJpYd7VuU7q9LovoMLERwhX--9vJuxJ_raezAkQRjXR8HEzo6_TtwZC_hDVEakaaF5NKvLMtD6MwT4QOE6kIH34iqL9XjmlXYq20ntyvbJ22vclVzvU6gcb3rcK-fZABnSkhjxGgGDABFsYNurOsIDKjufbMk8oOH3xcluQNs-J0yoaZzqDQJ8S3nU6KA4snXU53wqpS42Hm9FhmNEO7Dw4AGUEWnMKpb3WD7K0XWMSNcDPHAwkuQ94Wv1Ke6LnImeWqCF7UJtIy9pZ3PqeU0AhbbPVccuTUQ5LBJwsn2GpmNs5AO6MWY-t_fwAaX-ezfxThjoBR3fO17_F3CHnObjTfCv9DecgIfaWEEOqyKmJMaGPUqEhyQE_l8vwmipmCVS0ggcP2tLh90g97OjneeA05lyT3Oas9UHnK6T1YO4S33FCzqOU4KMfzWn5WyqYsRxi7UTswiiD3x2OyPT0FSkdGCQ_4mw5PddAltEL9CUye23OGmwbzwAKE7UngPGdfV1CciHfgHB1Cwfe8acHo9EFwYQIrsAktsSNYQIxjPlBM3wvkSTiop1VvQ5syAAOfeK2p-sPhinLEHLvD=w903-h890-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Burger</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/Lxq9Hr8TUUtwNniT3fyZSwCrU-7S0Q6LebvGqP29B0_Hj-yh6lxNPiTMcL1N9D7TsXBqODoH7AG65wyuMbPYxZ5o4BqRLpvbSB74MJh-wkkl0TWlM4Xm1DKuURHjQ7t7myc5VFKInO_cpA0t40pEwGu3ca73lQ2iBPcUBIeG7zOrq8s-65gWNbme7CY1ebJaK2Teq-CehcvH5cZcAEjsNZi_MSl7yAX36qhEDDqfBvSOYWaVhOdVEmFIjz2JKzH07eUXcSzrJTsq7JhSE95QkqzApW87V7DJRyJOR_Dw4BLm2-wJN8nzN69Zdj3eF5be2j2icdhEwdR030NdAiaW9-aCu-Ld98tfwU9ZHcfwSRdJvfOXciyPOT9RgppdZ6b3PiJC1OYaLjutbFVGiI7mm4FAC2ZeJ5ALNRjaADw7t2mwPFN-fNecV3CKSWiilOjKNxQTuZNzcMhipAGVwbxlOg9j1DQysYhNYXccG_FY_Y97YB4z5GQR2nyUvKu1cH46aNprx2P9OOphaq1-YqWddUITXerQWG06VJxMjm8S6BKHDut1q_hc1hrlNkWfFgLwgwpmAcfltk7NCfNvzBCxjYucmgjgRuWI-7lzSsOHcpB7SwICUa2odcXyWWBd1FkM3AHBdaj6zXhgHjzPyFMcOknJ54wYBHXy9Tee5C2n-nPORA9oTdS8NHpeLbZWqSVRgCSejHpEcCJHLkwRaZKpTtqV=w255-h491-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+ 
+          <img id='JadenExitButton10' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+
+<!-- Rigatoni Info Popup-->
+<div id='JadenPopUp11' class='JadenPopUp11'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent11' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/9VF60EoXHzizd_mblz-PlOhG-XlQirYsKKyOxaeqr05MmbnkzbWiJ8T7ZnX1NQgCqJP8DeikOJKs5IBrUAbgafp-jLsJeYzPFZWME243zRunwChuGnCfCwjZnunot2uyfEptA-dfGOEqnSz_tZnqOrrLW604hZIi4OJqrWuSEo6qLeLrhPZWbDeYtFDF-xxdGUWGivNpdnb4FM_k9xzdbEvDyeETFSMkgJfXOxBHg73rbAYU__xm8HOXF1oEGZnG5vk6biut3aGDzn8PuPbVk1FoDqBEMq7EnkBMNS__r76usq6mk-2tIav_U8m2grDNaxhJ2-Be-OLV9032CJbsr-FljzgmKW9k1kWXwK1Xdwma8_LaBX4ePoNstcdS7fD8nKwjOfFI6msjf1gufDehGHrY7IRQZ9abm2-4qIpLmoHVecsWafGflxBYjwQ0E7IljJ7moNh-zt9WDOUrpnW8a3gwB7T_Mkiav2l9IDD5Z5HODGyMnpTDoHSc-1jO1ViMZcCfUkvAFYFdqNpV3i3S_AApE0x5kPBJLGf8VVggOHhAEjuIfuWC1SJbyR2LekFhPuutjOhmfxYp8fp3yy7AOAM12AxSghXjaUUvda3mP8Zo3VUgFg8OKVmLCMIOLFJEMxXh4ARelFGzVrYpThEn2XmOxClKyyvN9MPfN09IwBABeeg-Vhy8A9t8kRSnfY5qyJ-zorodtERRq857WaCme4-G=w720-h660-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Rigatoni</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/Ugihh9pEIOyBtU7-NT1PJ3WRxIQZiNn3mpHYXJSp5QCPNEiLgx51XLp1SohMuRn9K6yLxxJFF6oTg0ntsoj2DQYUPVmjB-tEf4bRvbX_u5eRJmJD1Z2aIdzK08pyXLh_Vi5lkaIOFMydLGbrIesPnEcpRNUPJyS8de0zQDRwvWP_fOw2VBuiQfD3SJcIbds5cuYhkPa0nEgRQQ_qWPRO52lfHsJuUoSrq_LHdOUOl2GmxfUBxeyO4N2w6Dnjn5YuWMxu0BdCEqR57djwq7ssnOvXgOX__wU7p6w43nZVI0wERKFCxek7JGFY4jyCJz9FYFGm6MQDj4dJGHXFg9u2R8U-EV-jsn5vwOsZoSQV1zgg3jYa3IxniE9s5by-YmiLjv15f00rloXMIJSmnXG3AyEdxrtNjmQfO1_ecg2Tffm5XoUIWwGDPBA_eAsaCMSP_Bw8D66TlpIWOc-lEbJ0zamk1uTowEGgD0yQPDq3R1oKxiyCt0HVNF24ncy0rR7G9NserdEOcwmJqEALoOqNAjg7bR5zD9NIS_lXaRXoslycMJo0C6f08m0AumA_QKOc-B-5ISleLu1tymDeCt_yHro0SaNZdeXgJEhPiktG7UZCTT_VG-dgwJ8BXs5e8QdlMm6LNIDtMhVLVmqC3TzbXbpfrRPPNuNfsk5ZRkrJjE10WuicsBYstnAizJiVwzLLeYzYPyBpYublYPaBrdzhLlGT=w206-h392-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton11' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+
+<!-- Potato Wedges Info Popup-->
+<div id='JadenPopUp12' class='JadenPopUp12'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenPopUpContent'>  
+
+          <!-- The Left Half/Column Hosting Picture-->
+          <div class='JadenOneHalf'>
+
+            <img id='JadenLeftContent12' class='JadenPopUpImage' src='https://lh3.googleusercontent.com/BC71cEk4o6LTbXAMyldSLQPIF17X8CgVW27vbdy3RgFX0_GlIfobY2x5cgZOn85FzTrDDtNCZailt68S-4OxGJc9V5TZJjs_a9nPLQgLLl8aXV9gdnustJZ-9_rX2SPsYNGGiKQ48cariGCLLdklObDNFJzfvUiNDcYOOj0FMC0iXDEWSwOf8fIzH9T3W_fqhTMtxFCnDT0pQroFmCW2kcMXXGGsvpD3QJDMaoB2xGmDeTHuG0MdAxmJYgKurgDn91H1CElbJMlZ572yYEDCmDkp0MnWlOEQhbiSZT0Ts4rKg2AbpQvvS8Ae4Zpt00nxGdV7eJtxy-3bGeovcBXi78ayfrhKsZ3MhvcIS3p_3qC8yjWDMzq7reUox2dZ7RqNcCkc1KVcQKGFP3zg2VBqsLZvwMjDZjqN66mfOynfs5fPZo5AJl3WNTGxOTM5KULdpl6FdW71PDYojhllUy3evSMJm-5Lz-gEEGrR8J6wXrtyFqxhKaU3E55pC9wcuSdBHBVKu8sj-r99m_lg6c_h1T6vbBv61a2kIgPaUPvrvac93FIZcKoKC3VQOD6g3ATFC3tsIWDhkWEC_fCeWcq_IFJCWo-izb40lSd2mM6Xz30HniXQCLB4amj8SyDHXSeooN8pNZeHr14ZIG01WFwQI5TRdp29gdt0CQnVOWY_YbMp0ht-IrBesAA0EaYr3FJ39Plvi8N3IXFi_v7Y_cdGHbNm=w908-h844-no?authuser=2'></img>
+
+          </div>
+
+
+          <!-- The Right Half/Column Hosting Title of Food and Nutrition-->
+          <div class='JadenTwoHalf'>  
+
+               <!-- The Right Half Column Split into Two Rows -->
+              <div class='JadenPopUpRightBox'>
+                
+                <!-- First/Top Row Hosting Title -->
+                <div class='JadenPopUpRightTitle'>
+                    
+                    <p class='JadenPopUpRightText'>Potato Wedges</p>
+                
+                </div>
+
+                <!-- Last/Bottom Row Hosting Nutritional Info/Image -->
+                <div class='JadenPopUpRightNut'>
+
+                    <img id='JadenRightContent' class='JadenPopUpRightImage' src='https://lh3.googleusercontent.com/JQGy6S16aVt2ns_3vetqwJ7AvvbK_ceWG_Gw8BvwJYRa3jLN4PuHQSbYUQ-8d0GtEjd_qRGh8Orcs3YOMWdecxYPPJWf6mIeSizl8SECY-5-q4MBxcnunup7QTnTJO_RlcXeioLr_0uLkWdqDj7lPS7cvzN7pWadUOHrWWuRLR4TFvoW3lCMqHtOiIZefsxAIFv_fPFK_NUvJt-CpEDDqnvneM64egrJjZQ3IfA-ICm4pVqO7Mp-ogZBhxj-YD8l6UbNFWl3nZJrBJTLUX3obT17CJ6HYQvauL0tsq7R3nt360apT2wOpuScgCKWFtSytz8vwhlRfQlrrx79dsZodZphosTFg_4Xn2Zux1aNjz3t2h8K5ld7JOLOc5LQZuu5Adx5brakW9nmzicDrtiTOn0Ptt4eBdA5g9rEmqgYFZRC_SkhmispA4T1XYlE2cK1rpcLcrqEStWUj0N76fytMA-ilxTgCiov5d2fNjD5i80Go2BMJ50ER2Ik8HfL48HOjmNkfKIXFkINnK9xZW9STaoj5VT314jtcAfAPHyq3yYlitKZmfZye-Gv3uRSxTzD7xuaG9dSSU0n273FA-Fa75pBcoi3iUxcXrUZ12eWitTz13M6Q_tnVmn0lXUEExoHJ9tYP5Arn_UiawphpDzKQJrAiZ8Sf6LJlVLMWGqlY1Jx8p7ums4Blqu_1NXPgVsJLo3GgMkXmupODk2RLOjPoHCO=w169-h298-no?authuser=2'></img>
+
+                </div>  
+
+              </div>
+
+
+          </div>  
+
+          </div>
+
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton12' class='JadenExitImage' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+<!-- Dietary Restrictions Popup-->
+<div id='JadenPopUp13' class='JadenPopUp13'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenDietPopUpContent'>  
+
+            
+            <!--  -->
+            <div class='JadenDietPopUpContentTitle'>
+                <p class='JadensDietTitle'>Dietary Requirements</p>
+            </div>
+
+
+            <!--  -->
+            <div class='JadenDietPopUpContentText'>
+                <p class='JadensDietText'>Only Show Meals Which Are...</p>
+            </div>
+
+
+            <!--  -->
+            <div class='JadenDietPopUpContentButtons1'>
+
+                <div id='JadenDietPopUpContentButtonMeals1' class='JadenDietPopUpContentButtonMeals1'></div>
+                <div id='JadenDietPopUpContentButtonMeals2' class='JadenDietPopUpContentButtonMeals2'></div>
+                <div id='JadenDietPopUpContentButtonMeals3' class='JadenDietPopUpContentButtonMeals3'></div>
+                <div id='JadenDietPopUpContentButtonMeals4' class='JadenDietPopUpContentButtonMeals4'></div>
+                <div id='JadenDietPopUpContentButtonMeals5' class='JadenDietPopUpContentButtonMeals5'></div>
+
+            </div>
+
+
+
+            <!--  -->
+            <div class='JadenDietPopUpContentText'>
+                <p class='JadensDietText'>I Am Alergic To...</p>
+            </div>
+
+
+
+            <!--  -->
+            <div class='JadenDietPopUpContentButtons2'>
+
+
+                <!--  -->
+                <div class='JadenDietPopUpContentButtons2Row1'>
+                    <div id='JadenDietPopUpContentButtonAllergic1' class='JadenDietPopUpContentButtonAllergic1'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic2' class='JadenDietPopUpContentButtonAllergic2'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic3' class='JadenDietPopUpContentButtonAllergic3'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic4' class='JadenDietPopUpContentButtonAllergic4'></div>
+                </div>
+
+
+
+                <!--  -->
+                <div class='JadenDietPopUpContentButtons2Row2'>
+                    <div id='JadenDietPopUpContentButtonAllergic5' class='JadenDietPopUpContentButtonAllergic5'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic6' class='JadenDietPopUpContentButtonAllergic6'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic7' class='JadenDietPopUpContentButtonAllergic7'></div>
+                    <div id='JadenDietPopUpContentButtonAllergic8' class='JadenDietPopUpContentButtonAllergic8'></div>
+                </div>
+
+
+            </div>
+
+
+
+            <!--  -->
+            <div class='JadenDietPopUpSaveOk'>
+
+                <div class='JadenDietPopUpSpace'></div>
+
+
+                <!--  -->
+                <div class='JadenDietPopUpSave'>
+                    <button id='JadenButton2' class="JadenButton2">Save Preferences</button>
+                </div>
+
+
+                <div class='JadenDietPopUpSpace'></div>
+
+
+                <!--  -->
+                <div class='JadenDietPopUpOK'>
+                    <button id='JadenButton3' class="JadenButton3">OK</button>
+                </div>
+
+
+                <div class='JadenDietPopUpSpace'></div>
+                
+            </div>
+
+
+          </div>
+
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton13' class='JadenExitOtherPopUp' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+<!-- Login Popup -->
+<div id='JadenPopUp14' class='JadenPopUp14'>
+
+          <!-- Pop Up Content Split into Columns -->  
+          <div class='JadenLoginPopUpContent'>  
+
+            <!-- Title Username-->
+            <div class='JadenLoginPopUpDiv1'>
+                <p class='JadensLoginPopUpText'>Username</p>
+            </div>
+
+            <!-- Username Type In Spot-->
+            <div class='JadenLoginPopUpDiv2'>
+                <input class='JadenInput' placeholder="Username">
+            </div>
+
+            <!-- Title Password-->
+            <div class='JadenLoginPopUpDiv1'>
+                <p class='JadensLoginPopUpText'>Password</p>
+            </div>
+
+
+            <!-- Password Type In Spot-->
+            <div class='JadenLoginPopUpDiv2'>
+                <input class='JadenInput' placeholder="Password">
+            </div>
+
+            <!-- Login Button-->
+            <div class='JadenLoginPopUpDiv3'>
+                <button id="JadenButton5" class="JadenButton">Login</button>
+            </div>
+
+            <!-- Create Account Button -->
+            <div class='JadenLoginPopUpDiv3'>
+                <button id="JadenButton6" class="JadenButton">Create Account</button>
+            </div>
+
+
+          </div>
+
+
+          <!-- Exit Button for this popup -->
+          <img id='JadenExitButton14' class='JadenExitOtherPopUp' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/White_x_in_red_rounded_square.svg/768px-White_x_in_red_rounded_square.svg.png' ></img>
+</div>
+
+
+
+
+</div>
+
+
+  	<!-- import JS -->
+    <script src="js/template_js.js"></script>
+    <script src="js/JadenJS.js"></script>
+  </body>
+
+
+
+
+
+  <!-- footer logo, navigation, social media, credits -->
+  <footer>
+	<div class="row">
+		<div class="column"> <!-- METZ logo, team name, farthest left column -->
+			<img id="footerLogo" width=175px alt="METZ logo" src="https://www.metznewcollege.com/uploads/1/3/8/5/138581169/published/mcm-logo-rgb_8.png">
+			<p class="copyrights">&copy; Team Tax Evasion - a NCF Class Project</p>
+		</div>
+
+		<div class="column"> <!-- left column -->
+		  	<h3 class="footerNav">Food at NCF</h3>
+			    <p><a href="ham.html">Hamilton Center</a></p>
+			    <p><a href="boars.html">Boar's Head & Convenience Store</a></p>
+			    <p><a href="foodpantry.html">Food Pantry</a></p>
+		  	<h3 class="footerNav">Menu & Nutrition</h3>
+		    	<p><a href="weeklymenu">Weekly Menu</a></p>
+		</div>
+
+		<div class="column"> <!-- middle column -->
+		    <h3 class="footerNav">Plans & Pricing</h3>
+		    	<p><a href="https://www.ncf.edu/campus-life/dining/">Meal Plans</a></p>
+		  	<h3 class="footerNav">News</h3>
+		    	<p><a href="blog.html">Food Blog</a></p>
+		    	<p><a href="events.html">Upcoming Events</a></p>
+		    	<p><a href="featured.html">Featured Dishes</a></p>
+		</div>
+
+		<div class="column"> <!-- right column -->
+		  	<h3 class="footerNav">About</h3>
+			    <p><a href="goals.html">Sustainability Goals</a></p>
+			    <p><a href="feedback.html">Provide Feedback</a></p>
+		  	<h3 class="footerNav">COVID Policies</h3>
+			    <p><a href="safety.html">Safety</a></p>
+
+			 <div class="socialMedia"> <!-- social media icons and links-->
+			 	<a href="https://www.facebook.com/newcollegedining/"><img class="facebook" src="images/icons/facebook-square.svg" width="20px"></a>
+			 	<a href="https://twitter.com/MetzCulinary"><img class="twitter" src="images/icons/twitter.svg" width="20px"></a>
+			 	<a href="https://www.instagram.com/metznewcollege/?hl=en"><img class="instagram" src="images/icons/instagram.svg" width="20px"></a>
+			 	
+			 </div>
+		</div>
+
+	</div> <!-- div "row" closer -->
+
+  </footer>
+
+
+</html>

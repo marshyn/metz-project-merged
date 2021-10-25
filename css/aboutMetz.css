@@ -1,0 +1,65 @@
+
+.aboutImage {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: url("../img/cafeteria.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px;
+}
+
+#eventHeader {
+  margin: auto;
+  text-align: center;
+}
+
+#tabs {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#featuredDish {
+  display: inline-block;
+  margin-top: 100px;
+  margin: 125px;
+}
+
+#featuredHeader {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#sustainability {
+  padding: 50px;
+}
+
+#covid {
+  padding: 50px;
+}

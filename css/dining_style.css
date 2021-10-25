@@ -1,0 +1,57 @@
+@import url("template_style.css"); /* import template css */
+@import url("typography.css"); /* import typography css */
+
+iframe.map {
+  float: left;
+}
+
+img.map {
+  float: left;
+}
+
+
+table.mh-hours-table {
+  width: 100%;
+  border: 0px;
+  margin: 5%;
+}
+
+th.mh-hours-table, td.mh-hours-table {
+  padding: 1%;
+}
+
+th.mh-hours-table {
+  color: #fff;
+  background-color: #0c2173; /* NCF dark blue */
+}
+
+tr.mh-hours-table-even {
+  background-color: #ccc;
+
+}
+
+#mh-map-box {
+  float: left;
+  padding: 3%;
+  margin-top: 1%;
+  overflow: auto;
+}
+
+
+p.mh-hours-text {
+  text-align: left;
+  font-weight: normal;
+}
+
+
+p.mh-location-text {
+  text-align: left;
+  font-weight: normal;
+}
+
+a.mh-address {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #3A50A8; /* muted NCF dark blue */
+}
+

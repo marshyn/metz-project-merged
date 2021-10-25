@@ -1,0 +1,42 @@
+.aboutImage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-image: url("../img/cafeteria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+  }
+
+#Food {
+    display: inline-block;
+    margin-right: 50px;
+}
+#Drink {
+    display: inline-block;
+}
+#pickup {
+    display: inline-block;
+}
+#submit {
+    display: inline-block;
+    margin: 50px;
+}
+.checkList {
+    display: list-item;
+}
+.Name {
+    display:block;   
+}
+
+.inp {
+    margin-bottom: 20px;
+}
+
+button {
+    color: white;
+    background-color: navy;
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+}

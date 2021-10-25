@@ -1,0 +1,39 @@
+
+.coffeeImage {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-image: url("../img/cafe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px;
+}
+
+
+button {
+  background-color: navy;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.studentSubText {
+    width: 250px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+#coffeeContainer {
+  display: inline-block;
+}
+
+#mapcontainer {
+  display: inline-block;
+  margin-left: 30%;
+}
+
+#mapBoars {
+  display: none;
+}

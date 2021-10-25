@@ -1,0 +1,6 @@
+Nicolas Pitcher
+    About Metz Page - HTML, CSS, and JS, except header and footer
+    Coffee Options Page - HTML, CSS, and JS, except header and footer
+    Garden Blog Page - HTML, except header and footer
+    Student Blog Page - HTML, CSS, and JS, except header and footer
+    Takeout Page - HTML, CSS, and JS, except header and footer

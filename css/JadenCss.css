@@ -1,0 +1,962 @@
+* {
+  box-sizing: border-box;
+} 
+
+/* PopUp Backgrounds (light black) */
+.JadenPopUp1, .JadenPopUp2, .JadenPopUp3, .JadenPopUp4, .JadenPopUp5, .JadenPopUp6, .JadenPopUp7, .JadenPopUp8, .JadenPopUp9, .JadenPopUp10, .JadenPopUp11, .JadenPopUp12, .JadenPopUp13, .JadenPopUp14 {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;  
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Sizing for the popup contents of the Dietary restirctions and login popups */
+.JadenDietPopUpContent, .JadenLoginPopUpContent {
+  border-radius: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+  background-color: #fefefe;
+  width: 40%; 
+  height: 95%; 
+  border: 1% solid #888;
+}
+
+/*Divs for the login buttons, inputs, and titles on the login screen*/
+.JadenLoginPopUpDiv1{
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 89%;
+  height: 16.5%;
+}
+
+.JadenLoginPopUpDiv2{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 13%;
+}
+
+.JadenLoginPopUpDiv3{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20.5%;
+}
+
+
+/* Input formatting for login */
+.JadenInput{
+  width: 90%;
+  padding: 3%;
+  font-size: 175%;
+  border: 1% solid #ccc;
+  border-radius: 15px;
+}
+
+
+/* Meal Restriction popup stuff */
+.JadenDietPopUpContentTitle {
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  width: 100%; 
+  height: 14%; 
+  border: 1% solid #888;
+}
+
+.JadenDietPopUpContentButtons1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;  
+  background-color: #fefefe;
+  width: 100%; 
+  height: 15%; 
+  border: 1% solid #888;
+}
+
+
+
+/*  Meal restriction buttons */
+.JadenDietPopUpContentButtonMeals1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  width: 20%; 
+  height: 100%; 
+  background-image: url('https://lh3.googleusercontent.com/RfyZmJFpwaPAGFZVqJW8dhBHvQB5vb41WO_7M4HKPMKMZ9e6YqUGiTnAZlC7jODTYNyMldfVNSwa56-VDLK5Ui2nJjw7OuXq8AoAPkKaXh1A4gy8gVutFaVV-z8Eb2qpqiY5jA8-8xmJ78tUhnXE3x397gjqJ8468iSh6qSPWTR1fD3AKJr5r-cqJzVS5jMd-YfSvj-43yP3Xcx2jNICG0kH3q2mTiPypVQeexTAGd6OB-vJq-2OMP74oWh8lWilJvVadbJT40AgjEkcZtKTrOe_ouxOTAAwJPKHMedQV0_n0t5trhB0PXCebk_Bqs_2At5wrWfjyGZZgopb22jSB3Z8PBl2Y0H1-6Uf1e28MHScA94G7LJtL-Ovi_KNHtlqQs4l8ZNRxPzpUTEg0-Xwu7CWi5VauJTmQMDus_QDq4wAJLlmPDPvf2RFu626mTaEyYoy4bT6fD5t7fKKhHm5VobAYgaCTbAwJzO21Gde28vsXH-2vExx_URnOWQGg1MiazQkl453ssge8srxaSw17BmQp63zn6_bYwF75L4aDOJCxCjUbwbQfh6BD0a3zNuCjzuFMQOkqWeiHD3fiJ_PQ4-_DhqfYIrrx-Cd_mj-PLc7YVNge29eMdtJ-6T2m4zHWmS7BWjf_vuGm4Nv1Fk-e1KufFvtHYyXFXfqInkO7ioA8zoorLF-uwNMa3jTaDjzahosztzhTMU4BMtFEK_pKOOq=w109-h108-no?authuser=2');
+  background-size: 85% 85%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.JadenDietPopUpContentButtonMeals2 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 20%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/OoUb2EvXa-fr1Lx0iAkueVP2vTatfbrFRQLyAs7nfDEeprQvUOOF4YuZe9i00XCTr5SmH-1ieSW8qthgH_0pH5wdBidH9VDsDHnp7k_3SDUkGobWRcZOQni3_Ua2L1Pfh9H4rI9Ee2AaRM1wWIhzVETASwVo-8eaUJ6-fgnYTnxS5NkSF3k0CCHGOColrsrTm7o51ovnNOAWmpcuipR5m199ZtWrldpX0dikf0V883ze8OxczgLzA3qZNp48TE8anSZSpwfNeLk1h03Siyi_Bw04uENM3irnwywfntPzbhL7p4w5WBBGlj228pFyRDYn7u1DbDQjohZAiEpR_Tj7dK1FkBCQ2GQiTyLzi_Z7AfrnP3MQmGbPET2mk1g-TbwEhUh2LrdbSyI761A6-QgGhDP94_eXiZ2L7uKDlPekot0kNnz58tmAKrCiG7gQrHjCj98n7DYR3jC-QEOqmPsui2fAhbcDdFOGDcUghoSOKH-uUT2NDzPKqdVVeyVka4CwV8G266XAqP_2wfT4oO8KxXSkG8FocUM7b5smkm1k0YJ7C9b7prR_bDvx5uwxzJLlteCa9C8LUgsLsLon44IMXZDxxBwIo8Zf3Crcw5-iwMm5IuE4sQ1QPpwWN-DEQg2oW1LLQnvtJ3Fg_YxN2u0NqbD8Xqh9dHcoxJgb3g2FF13y_jYqFoQ-JgFpIMr50diWiz-PqYISkmsG7Mts1TbdpeWQ=w108-h105-no?authuser=2");
+  background-size: 85% 85%;  
+  background-repeat: no-repeat;
+  background-position: center;  
+  opacity: 0.5;
+}
+
+.JadenDietPopUpContentButtonMeals3 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 20%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/uLevLHJhphcaSVnDG9bcFCyF-RPoZZdpoADxbBehdepJUR5akHJu0TFw1JzGwgL6kCWXas_-phbyPAvUwrAPQuhQVnLj77yVfqB5WZqMsZyS0I-2BQ4CpHnJ4syvyxFpTpMr4UboOtMKKK7kbRvIrR4e1a1M4h5PA2BWjfHmWauWNepUC1CJpVkAB6KYPhgkSIJBRJ--NQlaCIqaVyln54yFj7aTyYbTl0ct6OHMLp7wv0hfPd7FtSgi2ilsGc2LSbxg_rG-2jVAP-G51Q7SGg1hqSzOft5Xr6ElJkmJqpT0QbmDpbEzxSFpENEmpxjgNIZQsXHpT0uUM7i7BzwAjAE1O2m81XtEXcgIbcEI3w8rQ3H03bkEs26X5pc6npoNLlnu36JQT40Tu1XhdDkCTDzwH-dFTy1aNMhuM6ZbGnwUo9QWjxWJxMYlPEWkZqkp7w6IjlKC7t4HSfhJna0K3RMZH9-ZbTAxesBZ6Cflh4f7HFxeDLynwJwF276-AiGL0j4tisAkIGMjodQizXw6amUrMuqrGq6ez1Q79lAK-1Fvv7jJwli72rLIjw8974DTcQ3hHpJ99NBf3hwNu2p2r38mPAg32EQVAvB9Jf6s6Eie4zQc-3iHJJThanDPsjpdjeGfvgG1SGlpTiBL4FG14-ZnsHY2Qf7xWimdZucqVZPY4yLr7Cikegq8KXlMrcIB5ME8h1XM_Fqf4SRmvmSLplNO=w111-h108-no?authuser=2");
+  background-size: 85% 85%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;  
+}
+
+.JadenDietPopUpContentButtonMeals4 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 20%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/wmkjg49DGnrVAYEvYGbS5ywrxglw-oka5E9Dq1vdkPXCE6s1YPnijn5Ws7Pohw8vG2kkV9iueMiRBTrC0zXwXJe94Ycmxk6K716DOKjC045mn4gzrnIUyfQEwh4vxH5xvbkOoYyquuJh2praHZ2EWCq6gwyHsBKMIQF4Do66VeINyTaZrfeTFoNGJBNDfRsCvHiFoUNhzUlbcqwW8OmMWKfvX7xrNdiL_cdZRUDqzsr-OMfoaz0nukaUPzee3uuaPLU1CgvCAj0RjPL9x6LydttE9dD_MCrv3MsTuY7xpd9AWxh043mfPuSfIEzexd1ETS7wusAkySbQ0WYDGSfyOQzNeKRBgpgtGpgYiCm96ZHR5mFmt5wgs7zWmEpHm4ILhZORiwU1FNjXBoq4ov-Jhm2TRpIyh4pguF5wzgp4OjtvIRbtOj9OeawgO-V2APs-YDvZS6Yc8_l41MKGTzJRFuNYFTBJFjX6d_rKHlOmXUf49m9ItiZeCnru9IViZoZGQkcgUPsWmnP9g11v39svAkRWkF4KpRurZzGcg6yvinz4fG0VAR0cjguO3yd45nc0_4clv52SK2gcu1mYfe48XmekHoiFWuY4q_6ags1lRVJkl7PwY-3R62EAj9FFy5Om9BXyMqjKEUYmr4fUNIRVRVVpe_91eYsShQFgR_j38pU3r54JEDFIapm1WJhGiz-Tz6kQnsWIEeHTwk_8wAgS467x=w109-h110-no?authuser=2");
+  background-size: 85% 85%;  
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 0.5;
+}
+
+.JadenDietPopUpContentButtonMeals5 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 20%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/UdO6h9I2etIPA0Yf1TvZoFDBoE4zYajn6HL2x22GFiRfPtBX-bH4A_FWTVth5D79dCHEUpafndP9pSto0zfqyDJyVRQ9NfM7wr6OGPzRFgT0zzz9YzpPU-86njj2D_J-XTO4pjTTR5opVsXAo2sG9bBhvdZktzygNxtupzgyYp-2O5q7XjqHRVreVA3cXQjryTh5pGpl40WgdPJEybnV4tYGBVcp7rHORPycE6-FpkZ4cYW9el8IgkUkOSymdcxzXLM3tQmr9su2CKqb2aXQvNoLJUxfNCWppb4f0DkNPU-m14aeSoHhrBrYW9XTeNVLd32Z3TKeOACKB8SedzEFyyqSmE8XTpH465fLLSeL8mPhW9tixQuSzIGdnmyP6nh5DWCV0FA8Wq-ICZieXEhHEbmhvjMyK_TEm_pcQoSm6dawC0flXxi9gK_KDIZuZMiAHS0M6DuGOfq08pcWAgBMkdG6GyTpShwo83EHw3HzfjmwlEY4Ji9UQXuFM9cJS4jOaRKlGVTdT1KsWLZepQDv1IC2OrdRhMRTKOjwhffbhk0i7vDHMz8ZLWKXHSw6tuG0zqbKdoqr5WVF9fUM3dRk7QDjSdbv9_ZwL1k3b_ZTVW4Zdtij2b4RH1C4HohjmWzET66kiuyot2XsrTggsAUIgBSuikZapmnjH-FDMFqWAFqzTcG6sCZG1-K1ErCp5q3wT8F_SVtEDk4CwkSKtQFVm7HC=s111-no?authuser=2");
+  background-size: 85% 85%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;  
+}
+
+
+
+
+
+
+/* Deitary restrictions popup stuff */
+.JadenDietPopUpContentText {
+  border-radius: 0%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  width: 100%; 
+  height: 7.5%; 
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+
+}
+
+.JadenDietPopUpContentButtons2 {
+  border-radius: 0%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  width: 100%; 
+  height: 40%; 
+}
+
+.JadenDietPopUpContentButtons2Row1 {
+  border-radius: 0%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  width: 100%; 
+  height: 50%; 
+}
+
+.JadenDietPopUpContentButtons2Row2 {
+  border-radius: 0%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  background-color: #fefefe;
+  width: 100%; 
+  height: 50%; 
+}
+
+
+
+/* The Buttons for I Am Alergic To... */
+.JadenDietPopUpContentButtonAllergic1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/RPjBTixvJZuIYP6B2mkcBkrDZjQ-dnFShiM_TCTEIQqWxpVOtq4Li-cnn161HF2ybVTw5dzj6udvGSKTJSPrq6gkDmPBTYCETZHpS6XReKcH5Al9d1XOt4KGOeynuFc_eW4F48QBsqOXJQZBGyPbwlkFEndhFOSuH6p-IKcyJqkHz3aHipUodQXxUoe15LUpJmqbc-vP6MUneiBv1X0m1nN5u2ZeNfDM28dr36VzHLcyMpL1njikWKCrWJPbZgPC9tOeagOZnUB3YfjNdOVUtbiQ3M20M5TBPogWTn1fTdTO3oJmkqTQI3gk7uTCG_wa2qpYNTLkEscAwfzdE8KW-owby4ilReN7JIXf4J7dRDhfJHRtklWfcYpcrsA3pZdthQFoIRVQDdj7VKjvm8lv-g4FJJRagtwjgBoC9K4O_YToq4pSxPAJerrHKULRYdfcv51kBRbzF6GzlCJR8WdU4insQeFJG49lZo4tStVkt4a1EM9DmyQYSEPrTkA6j5WH6G66fd09nWLQBosWOGswFuufliR0QeT8unrXcYUwbtFRQWoIwsjaSZSo0xvJSZVtm-bO60Ofotgzfhni6hCIb788Y2KLCa9___dVL0rcn92RRuf6OAdMEaM6TJqsT7bd3E9FYJ-YTI3kkWhKep4MUtAxFuZTBSpw84KmMMU9kcMDnyL2AO-a7EF4qTWMSMXek1_JJbNwl7Zxk5KWPvaCrsit=w90-h105-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic2 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/VqZVs4Mvvfz7EGUUd6g9PRi9Go3vd6PThKm1FeTNS0kB4YdJnIRUR7X4K5iLGkfASFaSDHBVisaAAPyBdSafhtUbLPbyCv9qSrY9PWKjc_yqVnPNxidMZR0H886ZyT5Ln3kHBjfjL1nRJAPmor429GZ471KaEihyhiZZLCBLsgKVPYQowPJgrUi1WRyv9CRNOdjAeHo5QX4E6H4ZDXgZnZ-b45YdvxkcK53NQF7jaZ47am4Dx73Pt00_qpVjiixiiWVeRqWLVwuvZzstyOHLBPdlpHkQlxiqX5QcKH_5NGbT7loD-lOB5hPnOjKDQuud9LTQwxeY0d0ORK9HUNQ505GWD1kpKMAMC_frNo8dO26nKjuTk8FPzXYnZyArtIyt7waKEnZh6D4lKXp9qvwmcVGNjoxxeCe-na0op7oPcvsvq4yZYzhcbbHmk5ieYIpdsB1LUcb74udXQw_wiiSdjAeJW-Tv_EV4a0qrddNTgbiHp1sI-GIuL4GP8LywB5GGoQ09lhhvOhlMX9n-vTYphqlnMkQuNAlBRSockXplDIZKmxdKKqNc-6JUp3i75Pdb6lqkrm7BwyVjYHOZM4KFbOQCRWTBjKy7SA1kNzBse1mtLeD2r6i214fRi6RUshLqBlrT3_nt0pcE9b-sGdDZAJU-tIfGcr-3j7PiemhgKCtEw9xc8YxfSIpkFq9g1XiCwpbPF7V3dJbhnM4qYu4_AbFA=w92-h103-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic3 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/DSpK-G5_kx20RMNsD1KuJxHChbGcXdFLNkXcG9k0iviC3R1dSdK3N2EBJ2BLhgG-yyjFiXaG88YsAksVTOI1XriTYJnDQ9MB29JKIQnAuTDaA8dejAord2hwfXcl3I8MZfiKkZEkDMa_8gaaMSzWJK8yGc2ARlwYsh2zmBfs7mFVvzlbfCi1kW_I9TulYLr4wrI5OLklgk_TD8KPKRLSn_zdzTl0qzys9LRXU_TrhySxy9crQVtq4UlUKsIiMEfD6HEHWOEbw2VFBQzNFT-bfkf2EjEefGZ1K3zkEanHOY-5NZ9IOnGn2wJjbOo476oCXdeDKHX-BDiTnOFXluetZzI4FEsycO595AzSpgCQ5evp-6EAA9-q4_zIwxDnfKpZRhO39HipNtf7_tzM0DujtrZFbhCq-ngCo5IkyAWmmG-s8H40h8CTvcJhn0oOp9kL43JN9V232LNsPqijenGsub3ZSAqPnYSs95kOeFmL58-ISruGzsEw59KD2KmIiyNeICBgDjnT7TaDMmK6h9OySs1QLRRmWgGGp4P8QIceHnAZTdAGB-Js9dmQh45AIyTfDZl3-hprHG1zMk7uUTrWGMSsZejTnropAEZ4_qN8c56Hy1GzjL9y4zLMKZSZOSRRSrGid8f_W7d44Fw_gSFJvvJ5rqoLexI1NkZHYHBKJ444pqwmG1KyMsEbQ4WvteO5nycEngGMIDMxqNtG_XvRvWJ2=w86-h106-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic4 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/8j2G8-k8QiVUc8N4rnPFZGPlHiacQ_lZt0CNO9n8Msw1kH6s-gqDP_n2Udc4XEBon1ZSwlRhYsrX1B-9ag_djTc9Gcff5T8aF6tPcRSpP7JiMXR64DALNs39BVtQJoI4Xdh7SGICyoXoL_3VQVOmlfe1GSMSnKjiRiCDF2jt4ylAwsg4p4KFGOZwrit6BhElb7cT7z4sOovs6xwDSo_qWfT7oBuaBXnxR9IBSJo-IrxoD1eErGBqWokwbQF5SNtolYN6q6zIoPg0F4juYzFy6SVcRUAYchIhmwNDL3VrWN0x_NHzoVApEI8gWifSphVOhCpxWjyX6u4fvogfUm2qlYVPKX0Niy719Jas3DY1XuL9-Pz5U3khJrkQdJXWp6_z4S327sywSbNVHp8eHATgJeEe6sIFnLAOU0jUlzL68DXiW5_HvbKKZKHX8kFO9xFYRLGEHC8jzsMbWjHdHyUPt5qoejbFwTYxqzs_ij0VnrDXuEqtdBq2uwrGMTbO8VIt3NLvYG1vkgBwekh8rYrQsVOZ8cYhPws-aSZzFM5XVAj1r-9gPku4Xiy9Tn7cAml5-IxCCZgRPsFm6Pxz-wBwGEczsQTmnpzUaahuo7A4jwEYVtWRa-M8ucMYMLOTIGlQ_jltF9tkCNNDqmpUuvQOca1SLlR2eoT9M688LvjlOgRKYESourW-aBIE3AJ2RqM1g81CQ6FKCEAuHcKZSPVms8P7=w90-h106-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic5 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/ssZ6uNDc63KAPU1ZtYYpkS2S0ddsoL_xFlSbrOeLa9uD7NGDgFXpzeKpa0w-NnmH0wNoy-oe2Zqhmu28mBuwn6CMFifV-H6sr57AX5EziDoT34_R3M-7IgXHaCdjsIETuX5oh5BCiAg6oLTX1uv-TRl60hD-_jBp3Fm6BuF3RHXStZWNujVppfgs0TMSqz8h498ize3es8qlhvQuoH7wfE8zSkxAdFLjvvmeLVmX-7YXPXWVbryjhGmTM9IrRE0Xv6ihD_6ZoUyHEzNuhmzqQvm-qQ3zUjIctPaEFLT2S3gAPIgE1OP6C3I4ojUU3XVBT5bQxsDtHs8M_uQybtdUWCUNswuHNM8SgUyeLXItoIoq798cM8POJwjxrSQm7PPAGzUc_4zNI1fkMaP5X6XkkZjn1WoEPYBXrpvJQ9gsQse54ZKVvZGQVFNhwvKXSlygBwu8fvCOs9xUDnIsePVdxqSwYMHPXmzu4MEzCrec2zPhC5QfUrdie9vfJ07NZNvAyW1R9NVnURtFo1PbXpzP2s0OJw8o-EY2SAVwOxuqYCvN7VUlckcAkZ13e1zMwJM94m5dJyMh_Ydpl3fevdazXSdshVhGhKQQ9AabBsOH98STVEmkcuOiJvYxePciyBPWnEN8fmzrXK6o215dlINFIBTBrtqtCtuaIq17YjF-DXMHNZul5ZA7D1YjbCxqP8h4YFQgrtcVce_lcMWH1aqe7B5q=w83-h105-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5; 
+}
+
+
+.JadenDietPopUpContentButtonAllergic6 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/ZE-pMxOtCpfocEYUn9maFpelBN6vedXqYQ6o7700-0UVX5UTmSpuf2c1w4zDCvcfJTAjKmqetlsEwVomdvWUb5M6UoYgjO-XmS0yHGXTSeSYw6-i7UzWE0v0b7vcT-Gz_0ZN2W4GTvw5WDrNYF35I5b_VwRAv2qUcyxpRXPKH9H_a8zAqZtinxA9AYvryFJecRHhT0dK3WC16eUqThkIb2-Nc3shVHeyd7L4wpqS7YROzd8q0yndu97Z6qruQECcG2_TlXGPF3pUJF9hAqxrZOVhx44ZdayzuJQoUfC04axlzRDl4QupHmyP6u_f5eJVqpvjqeRq8f47qDRKxRhvauLaEqRrIbDXSRIQx6Hn-F5woC_5bHOrlY4RlJZb83sP4iI5r-gPCQJXMb97CdlX3x7l-yT4ILohgIL6a1k90nMBr5MmIbRAv6DOni0m_Fj8AZ_90FqBNwUqdDG-3dQKIPppfYuuWnQCXhB_6zDyne1QoIdA_bKy-U2D3Ryk1nF4q5tzKCFw7lAdOjTNxeQC-EmQvfA5J5tBJuV6ni9FJxaP-zYApHCZDoTML_wUV6XiZrKUNus5xW48sLcb6DysALVQHgvKZ2inhsbtZKLwJT_kpQBgYLiy_Zd1cfkODaZaS060-cYglRUpj8_holBJd8Y5DCHpygfDFQBK_1HauL5cUkGb5zifXsBST4YvLIescA1-3VsHonk5y-H6GxyR1xa8=w87-h106-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center;  
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic7 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/gDxoZKj_F0OaNyrLN4sgFAXgBC96OFqOhg8O7L6on6gZTm0r_fHArXNkfbo8EGjRaCLRQfQ3YTDZK9tjtaFckgaOGinM7yuOkPllR1tXylk5j_w09lbiJ42_4lORe6Klaf7gg3KJ_Dg5acd7gRdVqO2gIlzK0koehUefby9CYKN55jrlxqXQ6o_SN8CwOdGe7AU9xPzj799J5rckIUU4b1wZU9XblIWHu8gS4cj-81HgFAqDL91bgrVeQsaLQ8sWH5przuAVYJYu_yQVhzHatRvjm9Kp0D7B2mA8sQBa_GfW-i1BAK415s1X8NYpR6ixqvHAzyvPBqonMhWpMjSSE0RLwliZjZsKx57VYi7QG7FN0REXRsR005byQAYkFU2zodbrH65RVp9HMmJPtXeGpaK4_c9oM63Q1JPrwAg_42-bjQDiAXEOg54akk2IhNzhxbdJo2eNpttmEL8Eczze30BTtbLAq_fiSi6mC296K4BpIJIfGKprjogoPX3qGEIMXYXTuuevhCd1R8KKUjbHFD-lhYR6EkbjJEQmkUthTp62L_F4AP6uO7tH-I7VCiZmPLJvid-LdHVgQhc1OX7UVQh5-bCNfuDGEtbCJjZCPLawrOJ8m-vui7c0D-mB4ddxR1HaohwAiWJjO0yyxMWlO4sqBqgYf7By2Z2N4qulmaJCKff0DW3lToWK6LOlM57nl68ZKoacBRf-kk4nj07tu4Ma=w88-h105-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 0.5;
+}
+
+
+.JadenDietPopUpContentButtonAllergic8 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  background-color: #fefefe;
+  width: 25%; 
+  height: 100%; 
+  background-image: url("https://lh3.googleusercontent.com/XlS2OtiW18ErLg-eqF6TqwY0kZn4ffVOL5sR0ovNTOEt0WUQ3vc83eGXou9qD2k1DbJn3N_Ee1zYRnNqJv69O--EgB7elZE2jiXWs6K0El_dGnNyz2ZuSwp2ACD1EP7g1cTTJv_A2ItNMHxySqh6aDk51GCJIoBng5lWWWFtsi2AnGw0_oR4uPPp82g-Z-4R-TyI9eIJ55rjccKoNyTjPQMDkuJ3mDDhVqb5GC9ixOwsh4ExMyNzZg3QybfLhzvJgRMGpwebE1kIhPUhB-dvyrLnpqGAnFiFcKMgWvviR_dquyDd0-HgiMWMIIyoM9RFWdVq0FsAw2RpIBGeYF6XRn1N7jNqJYKecMYX8nl6px8I-cLJXXD3CXEl1mduo2AW3yIsLax1xlF6jXOyBLUfFYfSCb97TFtjwufBp_0O1cWRZQmspj1k8WJv1WiBzbCe6XRtBn0Ln3YAe9JEbC9ALeLQDduQ2jZ0zJ3DbDuUo4mhe6DXJi1W6y52SQb8V_0yHSRSZ4pESZ7ZNzdtuP459VU9-QTTzchz-_pPM4gyBwKnwgEwT02oHcMXQcjsjSlRpGfXkMvqm_mLxnNYa63nkJwZuO4n68da2ybSjrBIn5UtVg0s7hPIVDdHb4Z3I2VPEW6fIntw8hop1YbpP6hImxYQkPWzl8RA-pBh72NkFYVnnlLzIDrx-Q_JXLCJfhJWsJV8bAoiqpX5qp4avxs11fpe=w90-h105-no?authuser=2");
+  background-size: 90% 90%;  
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 0.5; 
+}
+
+
+
+
+
+
+
+/* The Save and Ok Buttons for Dietary Preferences */
+.JadenDietPopUpSaveOk{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  width: 100%; 
+  height: 16%; 
+}
+
+.JadenDietPopUpSave{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 35%; 
+  height: 100%; 
+}
+
+.JadenDietPopUpSpace{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  width: 10%; 
+  height: 100%; 
+}
+
+.JadenDietPopUpOK{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 35%; 
+  height: 100%; 
+}
+
+
+
+
+
+
+
+/* This is the styling for the popup windows for the food */
+.JadenPopUpContent {
+  border-radius: 3%;
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fefefe;
+  width: 80%; 
+  height: 80%; 
+  border: 1% solid #888;
+}
+
+.JadenOneHalf {
+  border-style: solid;
+  border-radius: 3% 0% 0% 3%;
+  width: 50%;
+  height: 100%;
+}
+
+.JadenPopUpImage{
+  width: 100%;
+  height: 100%;
+  border-radius: 3% 0% 0% 3%;
+}
+
+.JadenTwoHalf {
+  border-radius: 0% 3% 3% 0%;
+  width: 50%; 
+  height: 100%;
+  border-style: solid;
+}
+
+.JadenPopUpRightBox{
+  flex-wrap: nowrap;
+  display: block;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 0% 3% 3% 0%;
+}
+
+.JadenPopUpRightTitle{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 15%;
+}
+
+.JadenPopUpRightText{
+  font-size: 300%;
+  color: black;
+}
+
+.JadenPopUpRightNut{
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 85%;
+}
+
+.JadenPopUpRightImage{
+  width: 90%;
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+ /* These are the exit buttons for the popups */
+.JadenExitImage:hover,
+.JadenExitImage:focus, 
+.JadenExitOtherPopUp:hover,
+.JadenExitOtherPopUp:focus {
+  color: #000;
+  opacity: 0.8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.JadenExitImage{
+  border-style: solid;
+  border-color: black;
+  position: fixed;
+  background-color: #cc0d06;
+  border-radius: 0%;
+  font-size: 400%;
+  vertical-align: text-top;
+  font-weight: bold;
+  text-align: center;
+  width: 5%;
+  height: 10%;
+  left: 87.5%;
+  top: 6%;
+
+}
+
+
+.JadenExitOtherPopUp{
+  border-style: solid;
+  border-color: black;
+  position: fixed;
+  background-color: #cc0d06;
+  border-radius: 0%;
+  font-size: 400%;
+  vertical-align: text-top;
+  font-weight: bold;
+  text-align: center;
+  width: 5%;
+  height: 10%;
+  left: 67.5%;
+  top: 0%;
+
+}
+
+
+
+
+
+/* Sizes the page (made it flexible so that it transfers over easily on the templates) */
+.JadenMetzMenuPageBox{
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  width: 100%;
+  height: 150vh;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+
+
+
+
+/*General boxes to help move around p tags (as doing it without these causes problems)*/
+.JadenWordFitter{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  width: 75%;
+  height: 45%;
+}
+
+.JadenWordFitter2{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  display: flex;
+  width: 59%;
+  height: 45%;
+}
+
+
+.JadenWordFitter3{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  width: 59%;
+  height: 45%;
+}
+
+
+
+
+
+
+
+
+/*Formatting for the bar of the top page, where Date Selecter, Deitary Preference Chooser, and Login*/
+.JadenDatePicker-Login-FoodProfile {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 22%;
+}
+
+.JadenDatePickerProfileBox{
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  display: flex;
+  width: 33%;
+  height: 100%;
+}
+
+.JadenBlueOvalBox1{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #1CABFF;
+  border-radius: 10%;
+  width: 90%;
+  height: 72%;
+  border-style: solid;
+}
+
+
+
+/*Choose button format*/
+.JadenOrangeOvalBox{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  background-color: #FFAC1C;
+  border-radius: 10%;
+  width: 50%;
+  height: 45%;
+  height: 45%;
+  border-style: solid;
+}
+
+
+
+/*Login button format*/
+.JadenBlueOvalBox2{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  background-color: #1CABFF;
+  border-radius: 10%;
+  width: 65%;
+  height: 72%;
+  border-style: solid;
+
+}
+
+
+/* This section has to do with the login and profile pic */
+.JadenAccountPic{
+  display: none;
+  width: 30%;
+  height: 70%;
+}
+
+.JadenFoodProfileBox{
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  width: 33%;
+  height: 100%;
+}
+
+.JadenLoginProfileBox{
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  width: 33%;
+  height: 100%;
+}
+
+.JadensLoginText{
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 300%;
+}
+
+.JadensLoginPopUpText{
+  display: flex;
+  color: black;
+  text-align: center;
+  font-size: 300%;
+}
+
+
+
+
+/* General button formats */
+.JadenButton{
+  width: 80%;
+  height: 70%;
+  background-color: #1CABFF;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  font-size: 175%;  
+}
+
+.JadenButton2{
+  width: 95%;
+  height: 60%;
+  background-color: #1CABFF;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  font-size: 125%;  
+}
+
+.JadenButton3{
+  width: 95%;
+  height: 60%;
+  background-color: #1CABFF;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  font-size: 125%;  
+}
+
+
+
+
+
+/* Formatting for the Pick Meal Time: bar */
+.JadenLunchDinnerBreakfastBar {
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12%;
+}
+
+.JadenLunchDinnerBreakfastBarFirstBox {
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 22%;
+  height: 100%;
+  border-radius: 5% 0% 0% 5%;
+  background-color: black;
+}
+
+.JadenLunchDinnerBreakfastBarOtherBox {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 19.5%;
+  height: 100%;
+  background-color: black;
+}
+
+.JadenLunchDinnerBreakfastBarLastBox {
+  justify-content: space-around;  
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  width: 19.5%;
+  height: 100%;
+  border-radius: 0% 5% 5% 0%;
+  background-color: black;
+}
+
+
+
+
+
+
+/* General text formatting */
+.JadensGeneralText{
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 200%;
+}
+
+
+
+/* All the boxes and rows for the food pictures to be displayed */
+.JadenAllFoodDisplayedBox {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 67%;
+  width: 100%;
+}
+
+/* Row for splitting the pictures into 1 row of 4 */
+.JadenFoodDisplayRow {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 99%;
+}
+
+
+/*First row of pictures*/
+.JadenFoodDisplayBox1 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/NzHY3Ahqi4tQpMwxVDDlMGEa7gl6--WJvx4cHXk5Lq_Au-Nza3KZX16IyvoTFWHzmnUEUwzdfqu1o5penH9IcmvRu9ru0sc6NTzMs0emnz-I8WXmnaLfJmMmUQZTe4OSS56pjWmNQYUabd_KYoFz71LfFntCfileRvarUw7DcyyJv6JuQYY8sbsmHfloMovoO1Xt56QQOXf2eM-RpZMEMA7K_jsxVCOS-CbPNhT35y6q6tI60ZFMUyXZ6wLqkSt4d-sTCYxryzHxA1dUvCqhToZP7PsAS7TCpJBs3whBvVFWBexXx2WFz-MWIjXnPJRKcLFS6CyJomqQ8-02HUCkcizlrdByHS0DTe_9zRsIQWzpQWwk1BqsgKWfDwud_LLCn21rA3rIcE_RhhfTcvT6ZqhDXc3znqPJxsKVC7RGl0CEO7cwjEec8Te5XqTCV4tCuV67eoFI87hAnkevRaN974Nhjg799Va-ux682Zw3dkOWG7vWYocbwpchiuQUkGpOQrNDFVjMP1JcFDipBheVxColB_ZVvGkSfYNX7hdwUjAuICleUpv1Ho_x9xIB5xgfmeRSLRyOOwNsh183hV4gTxoo96LAPK6NjQ3NiYUEGaNz12NSQmvoY2SQHc1_RqmmqkkcXZBwIpsxggdxadNIG1IGdXKvcgNl07lCg-O8paCR9JHhQjuUZXgRJ-XYJ6ql2m3Ti5Qq00kkS3pqn-Oup-gx=w1317-h890-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox2 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;  
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/0ChLok8Zz9GIU_bXSHaR_-LAOGve1nprwFYQ7F0xjqOHXuZJOG1XlUqx4sZ_kwX4FnB6_ZAxdzclWdmmIG6JgQgGBase3SVS5c_-i1eNC0lNi_npc6yDYDsYFUGa3dxrlw1GLe2HMaDJWDZJBducgl4jkkIUhpC0Q8Sib-gEwFCv9dZE5UcK6r_ByoN61F-NkEYlUb5PPMQfzJpCeGbVh2dX_9rgU2kaX0oaUufxQF2PRkOhqDZQIlXHAd4n5HbS5gAzzEq13e_8atjS_xw5w5XsXQbvZInTO4yfmmxQZrXPzsRJq4VbhtnaqXCaG6N7v2lDWiNJJKCp14lKPtwk5282qJOAkSu0X25xw0HdHbz36sESDXWWGGE-yQW2L_EJXmrszF1jcK-RM1SlHNfHEdIxuraAY9_7hBcf0oyWU7m1zP66muNyYFhQ7Ss-qNeVFBj8iY_owU_n7BGIBfg0z20gYTj7TijQmdQZEpfKExm3Z8zx4TJMWJpGDNHlUeR2nDoywFdClj4BNQq4_B-G1Dw3EqPHcRJlbkAtOu_3vttjeGKIU4yxj2_nSl6z6LETrSaVbw9tOU5frzI5NGXAwfuoYk4a8J1aFbeiRzpEN8gp3rADmeXdCD__QZGNHc-pO3ILl7oOfxS6xCW1kAJ52fha76PIZcG9rLW9pnNDbjg08UHHeYGt-KmHijDqQ0Fk9ZEk2WhHDrnYcEPmDCOS2P5H=w1027-h890-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox3 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;  
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/wWaaZuYqgNIe2sZWXIE1ls_LMIoc3Dm1k_H2JZ9ihWIIAemftHH4r3je33DXka_AbrhXrxr7FCB7SWTsG43140MnvLbmN3Tm0Q6kknuUFiDuhsoWzFyxJonQx3suoyvnGZ-ECkOhjT5kBjFiaZPm_S31ZyVRYt3yaKb20IrWRIkIcnU3JcqxNbF0vJ8_VsBJ7h33k7DOOAi4g-TJlcG9y9lH3KquihyhNJKqjhUqwXJhBSI_-xGT57XVb1kjmBZH_1EjqkN52vor7vdyYzIe9cmQTJiZ2Lg1mPp8PsHNxraTX4oCfMWOYdwl98PbOql0WMR1IPO-udL4l7FS6Cbqww8Xe7KkYIa5BpUA9hbD2RAGl6REc1M_hXPLPW6HnxHfyvY_it0cNEEmWDrVCmx4HI8n6LLGecTZCKsy7uBH1zqAxlB40wAIfIWKlavodiGMfUYiXjZztZ9Cja4NnhDjWggj7eHgsMiYw0DkSuk71ogU5a6dtIYp8HyXlteFHM7cpWtZjzRV92qFCEXTGQ37AUJzY2OtYgRPWwAiTzmG5e8adVcVXHRoPE77Mg4PRvrGgKayhO-RLRpmJr55ktqidpvWsC5iPFz1wW9NX0gVB-FPfdyUV5NN1pQdNkKik0bkTEumhHW8yioSzARlq-7CLQBv217H8f8HYKMauYzJFnAixW9CIvs66j76gyccdRzQic3YTOh13-MUd4MAZgXA7Hw0=w834-h890-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox4 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/0y_Q-ZZl4c9VPSnfkLrbykCOE2c6u1j5Cd9cgiuErTZxuuKWE7mLbKCgm02s9DZkku8FKkgjkiTf8n527ECqLHXkgcitl0DSGTIXi6bRM5CLHQLRVzv5wVbW9u5cTBJVucQsW-L-Om7_tGMDej3HDIlFVoMtj0Zl22il-SOu6MPt8koAhaniHHQepN1fjhPJU9krK7U4F9bl-JGfnb7JTri9WQPkrWXaKZKB3PR4Wr-wh7Ne23945iQaewDU3xaSvo4guvtYS-t_Tg999LV54RqDnE8S6ozsBs8j73ONphscN2DEkxV1r4-QuH5SJv9q2L1Csjvg24qGDz8dusT4GGDzpUcjmj8VAItUIjcCgJ9kiIlz2Orl_xcV95Xbsj5KUsCOPc-NX6dnfoxHbmq_SBKEgpvI_jdL6Qyj11ERdvqZtI6dZxCFFJ7d3gT3-Uuf2KBPVnu-uV_YTJz14sb2oKVhUOGSZX9Z6GULNlrQRL6rieiHmV5eJ2wQp1oFZ-ZjkqK0mdj0Zi5Vcfr2ZoKhY0pD_I2IWM1sKbUaYSPkLXaomRj8DlwlQ-1K_5-SL7yGmlnxHxgBx26CgqBbiOcs10J-5vhyQrxKE2RFHU9l8ZD8e-chSjoT_skwmYjatKwTXjjVI5_aduWLqlIKG5njLv-QgfcLDl5LgISmRoqVZh6hhaVqIx7n_ocL2i3BulOvw7A2ogJ8kzsciShrANWnVxoQ=w1160-h890-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+
+/*Second row of pictures*/
+
+.JadenFoodDisplayBox5 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/5jL3ZUzvf49OI1buZrIbre_FcDcgfcT288b-cCgmG2_MQVVPjGRF5AfdQEuvSWxFNlTUzefh-2lhyKTMbszxoh0MbziNL_iABbUMIRZdkQrrfhsjFW6swKk1lfYnwLgPWpfDmO2xCAMKE_zIWBKUbHMUEtuIaxogy6oKFA82egcxRXTiUrqJPQBWFaybYFTssoxx_t8i6I7fcYQeNwTdc6LxsWPoPxiYFGrSPpRYT908ZVzkBm-fMyGkry1Mc0hFPDx4USbxqfhgrjzWobckE1SB9w6E3KdJNyLqdViH2JKzaqM8eiNAamvFWmgq6TQjYrYoG4rnD-aZE1xiKp4HNFYS8YWV_HnS5XMwzhKsCg2MWLUETpcacS7JUQAQuhl7GKwS0fwVgVPyisNLadaoaZV0Taqg0_pNUlbnJ0PIML3D6_D0lX-UrR-NWDuOH1DsFoQY6PBwKA60oMCKpmqd5422nNYQHqTyP92NoH19oXtFGjFisdBQP96axiUspRvLuduEg6YjWd5xqjfY3BQU27t2zqr7CBFtEeip6RolR5AJuN5vk5tQD3YUWY13BGEYayVtcnvUiXrMw7rv_MIeq5rd0odQrJSR3oytSZzbb-FNC5PBB3c-OUpxY8TOAU2vmhDdD4_RaXmlTlW1xLchUKRgtQt5BsaAkoUqMUP6TAty77BKs-IuvyHYwQm89Nd3fx_XVAR83eICdiVPTL2Us8ba=w824-h660-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox6 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;  
+  border-style: solid;
+  background-image: url("https://lh3.googleusercontent.com/qmCXetlRbBjHZ1RA6QDUX3xq7VzJ0eU4DuVcv-BeCoVTt3H6qs0CqAI4pA9xVzysMMAJT5F0XuwlD7LfBgr02-TMuKqUXKdplOsTH1RIuc8gNbcPmqG_M21KhMMW3TEzPdO2nzbfFJpYd7VuU7q9LovoMLERwhX--9vJuxJ_raezAkQRjXR8HEzo6_TtwZC_hDVEakaaF5NKvLMtD6MwT4QOE6kIH34iqL9XjmlXYq20ntyvbJ22vclVzvU6gcb3rcK-fZABnSkhjxGgGDABFsYNurOsIDKjufbMk8oOH3xcluQNs-J0yoaZzqDQJ8S3nU6KA4snXU53wqpS42Hm9FhmNEO7Dw4AGUEWnMKpb3WD7K0XWMSNcDPHAwkuQ94Wv1Ke6LnImeWqCF7UJtIy9pZ3PqeU0AhbbPVccuTUQ5LBJwsn2GpmNs5AO6MWY-t_fwAaX-ezfxThjoBR3fO17_F3CHnObjTfCv9DecgIfaWEEOqyKmJMaGPUqEhyQE_l8vwmipmCVS0ggcP2tLh90g97OjneeA05lyT3Oas9UHnK6T1YO4S33FCzqOU4KMfzWn5WyqYsRxi7UTswiiD3x2OyPT0FSkdGCQ_4mw5PddAltEL9CUye23OGmwbzwAKE7UngPGdfV1CciHfgHB1Cwfe8acHo9EFwYQIrsAktsSNYQIxjPlBM3wvkSTiop1VvQ5syAAOfeK2p-sPhinLEHLvD=w903-h890-no?authuser=2");
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox7 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;  
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/hD4W4jUSScuzZziOAMT26euVk72CpeUGO6dt6OE8FriHKSGmOr8C17KyCouE_6wRtqU4rfO5baC-XlEMdtkNbNZwkK6lMMN6ztk_j7x5WVPTM2YQMaDPjAV4w9_ny2wHnPWBn7bwjb4UnmgA5jztRZfhxI16YNF8znm91ifOwbiA6QmjLn_LvvmmaawTOrvdiUtGmKwj1kZzdBLr7qWSYaaGDSY9kjetQBqN-JDwl8olpotfq-FB1RasDqv-WlFhq1PMfKGz3otxcfLez_v8W1gqxOnayLWajBrKvUb6hYXAmv6rWQijh4fGuirBbrGaPCFEy-Reh-mBPJ2ENcbdLTKansi16p9hvDIfeC6XDWxqKtZuYazv86k8CTaFOjTDFFYdl5_SepTuSwxKmEFvYrhFHovVfwPw0e-Pq74lxlGEAwAPKE5Z0kxGGk4atCzvYH-W_pfgNLwI7yWqz-rnTDfyJJG98B-qjzjhm-HmTqZ2jw2Q4RNMMIFIIErWDuEoP7Hj8YRvUcdDDqswouQZs2nZnGt0s1QzhhUwxCHiv-FsPvFsyUQ84h8vIhNZ_zLEzFCs717rcT5sMTLDGb0CF8HKnLDMN3QjS0Kmv-vWqgGPSQp2Hg6BdsRAO-NqePTm_rmq6AOc4W6LnMtaBN_G1wpm9F9re-T_JxJ7v6PwH4AQ2ehJ5mnq4-JHR1naQ87e-E4Frffz1Qy4khctvIGPPpun=w1094-h890-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+.JadenFoodDisplayBox8 {
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  display: flex;
+  height: 82%;
+  width: 21%;
+  border-radius: 7%;
+  border-style: solid;
+  background-image: url('https://lh3.googleusercontent.com/tceJuYaXPpUhqhQniwtQ9LzbbgGvdk8V13fGUefRHCJjGrYWXJuZFK47WoZLVc9zV4IEuTM0474Oe1BgnHtGKEldbRpdjiXF2xtWSCWj9pIjXPhZsOOxnstW-3sbvl6ykEw8MyhIiiQ-kW56h_EhIovui7BsnAIlohBpkC3gMJTy1COxGzVb5F90qPUJg4P6RNDDGvGk672-G0Q_K5iPFY1XgJzTAprsdy2o90A9m4pfIFPJHjs823RG1sL5AwaWoiXe0W46QdqovovxDdU9SZ4Ot1q6xPIsdadi8aFbbdF6GHwdw9qj33GUJZ3cly_iW_iAuQLzzB2tKPLUNxkW4w4Zfufe-pvqHE3qqLIRqElMm6K2HjXat76JM751VqEPWWwAE4sNwJKLyNXGEPwccyjIcuTv7yS-qI4q5ZU_jwjXz1SQaDqTUH3dn2jyw03-SjU9tBDLQPFRBdhdq1hm_R2_uHHPQUH9ZwrFxu3M52Z2Oe1w_AHQ23dOac99kW_XjpVViOt4zfYCSVX4CeQY0BTIOLAghPbbpuJgpsLqh_2JDydD4lEklLJPP_gW-Dl4dTwgDmu9DMR4CMdpR5DQo2RFN5LFgFJsatfPsQ6PzSI0FlKQybDlKv978Gb26rDAWboVB9tQZ7fr9foEnHUocyTvGrkzThncI3aw80X-97ibJccfDvMhtl-jlr3BUOe6LKLi5EJzx84nw85jXKR91AXr=w808-h604-no?authuser=2');
+  background-size: 100% 100%;
+}
+
+
+.JadenFoodPictureName{
+  color: white;
+  font-weight: bold;
+  font-size: 125%;
+  text-shadow: 0em 0em 0.5em black;
+
+}
+
+.JadenDateOptions{
+  width: 90%;
+  height: 85%;
+  font-size: 175%;
+  text-align: center;
+}
+
+
+
+/*Dietary Restrictions stuff*/
+.JadensDietTitle{
+  display: flex;
+  flex-wrap: nowrap;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 275%;
+}
+
+.JadensDietText{
+  display: flex;
+  flex-wrap: nowrap;
+  color: black;
+  text-align: center;
+  font-size: 150%;
+}
